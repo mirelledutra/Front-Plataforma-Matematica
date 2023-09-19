@@ -1,0 +1,306 @@
+.component11Child,
+.groupChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.component11Child {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+}
+.groupChild {
+  border-radius: var(--br-8xs);
+  background-color: var(--primary);
+}
+.cancelar,
+.rectangleParent {
+  position: absolute;
+  width: 51.52%;
+  top: 25.71%;
+  left: 31.44%;
+  display: inline-block;
+}
+.rectangleParent {
+  height: 19.44%;
+  width: 17.42%;
+  top: 53.33%;
+  right: 7.77%;
+  bottom: 27.22%;
+  left: 74.81%;
+  display: none;
+  font-size: var(--inter-size);
+  color: var(--gray);
+}
+.component11Item {
+  position: absolute;
+  height: 20.04%;
+  width: 42.27%;
+  top: 25.69%;
+  right: 6.35%;
+  bottom: 54.27%;
+  left: 51.38%;
+  border-radius: 4.51px;
+  background-color: var(--color-white);
+  border: 0.9px solid var(--gray-dark);
+  box-sizing: border-box;
+  display: none;
+}
+.marcosMatos,
+.nomeDoProfesor {
+  position: absolute;
+  top: 16.67%;
+  left: 51.72%;
+  display: none;
+}
+.marcosMatos {
+  top: 32.2%;
+  left: 53.41%;
+  color: var(--color-darkslategray-200);
+}
+.component11Inner {
+  position: absolute;
+  height: 20.04%;
+  width: 42.27%;
+  top: 26.24%;
+  right: 52.97%;
+  bottom: 53.71%;
+  left: 4.76%;
+  border-radius: 4.51px;
+  background-color: var(--color-white);
+  border: 0.9px solid var(--gray-dark);
+  box-sizing: border-box;
+  display: none;
+}
+.nomeDaDisciplina {
+  position: absolute;
+  top: 17.22%;
+  left: 5.1%;
+  display: none;
+}
+.matemtica {
+  top: 32.76%;
+  left: 7.8%;
+  color: var(--color-darkslategray-200);
+}
+.ativo,
+.matemtica,
+.rectangleDiv {
+  position: absolute;
+  display: none;
+}
+.rectangleDiv {
+  height: 10%;
+  width: 2.26%;
+  top: 62.78%;
+  right: 92.11%;
+  bottom: 27.22%;
+  left: 5.64%;
+  background-color: var(--color-white);
+  border: 1px solid var(--secondary);
+  box-sizing: border-box;
+}
+.ativo {
+  top: 64.44%;
+  left: 8.9%;
+  font-size: var(--inter-size);
+}
+.rectangleGroup,
+.salvar {
+  position: absolute;
+  width: 35.35%;
+  top: 25.71%;
+  left: 35.48%;
+  display: inline-block;
+}
+.rectangleGroup {
+  height: 19.44%;
+  width: 17.42%;
+  top: 53.33%;
+  right: 31.2%;
+  bottom: 27.22%;
+  left: 51.38%;
+  display: none;
+  font-size: var(--inter-size);
+  color: var(--gray);
+}
+.component11,
+.componentChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.componentChild {
+  border: 0.9px solid var(--gray-dark);
+  background-color: var(--color-white);
+  height: 13.22%;
+  width: 41.34%;
+  top: 66.02%;
+  right: 53.39%;
+  bottom: 20.76%;
+  left: 5.27%;
+  border-radius: 4.51px;
+  box-sizing: border-box;
+}
+.componentItem,
+.professor {
+  position: absolute;
+  top: 60.07%;
+  left: 5.6%;
+}
+.componentItem {
+  border: 0.9px solid var(--gray-dark);
+  background-color: var(--color-white);
+  height: 13.22%;
+  width: 41.34%;
+  top: 45.14%;
+  right: 7.8%;
+  bottom: 41.64%;
+  left: 50.86%;
+  border-radius: 4.51px;
+  box-sizing: border-box;
+}
+.componentInner,
+.mdulo {
+  position: absolute;
+  top: 39.19%;
+  left: 51.19%;
+}
+.componentInner {
+  border: 0.9px solid var(--gray-dark);
+  background-color: var(--color-white);
+  height: 13.22%;
+  width: 41.34%;
+  top: 22.43%;
+  right: 7.8%;
+  bottom: 64.35%;
+  left: 50.86%;
+  border-radius: 4.51px;
+  box-sizing: border-box;
+}
+.nivel {
+  position: absolute;
+  top: 16.48%;
+  left: 51.19%;
+}
+.rectangleTextarea {
+  border: 0.9px solid var(--gray-dark);
+  background-color: var(--color-white);
+  position: absolute;
+  height: 13.22%;
+  width: 41.34%;
+  top: 22.8%;
+  right: 53.39%;
+  bottom: 63.99%;
+  left: 5.27%;
+  border-radius: 4.51px;
+  box-sizing: border-box;
+}
+.cancelar1,
+.nomeDoCurso {
+  position: absolute;
+  top: 16.85%;
+  left: 5.6%;
+}
+.cancelar1 {
+  width: 51.52%;
+  top: 25.71%;
+  left: 31.44%;
+  font-size: var(--inter-size);
+  font-family: var(--inter);
+  color: var(--gray);
+  text-align: left;
+  display: inline-block;
+}
+.botaocancelar {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 12.82%;
+  width: 17.03%;
+  top: 81.68%;
+  right: 7.84%;
+  bottom: 5.49%;
+  left: 75.12%;
+}
+.salvar1 {
+  position: absolute;
+  width: 35.35%;
+  top: 25.71%;
+  left: 35.48%;
+  font-size: var(--inter-size);
+  font-family: var(--inter);
+  color: var(--gray);
+  text-align: left;
+  display: inline-block;
+}
+.botaosalvar {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 12.82%;
+  width: 17.03%;
+  top: 81.68%;
+  right: 30.76%;
+  bottom: 5.49%;
+  left: 52.21%;
+}
+.rectangleInput {
+  position: absolute;
+  height: 6.59%;
+  width: 2.21%;
+  top: 67.03%;
+  right: 46.94%;
+  bottom: 26.37%;
+  left: 50.86%;
+  background-color: var(--color-white);
+  border: 1px solid var(--secondary);
+  box-sizing: border-box;
+}
+.ativo1 {
+  position: absolute;
+  top: 68.13%;
+  left: 54.04%;
+  font-size: var(--inter-size);
+}
+.componentChild1 {
+  border: 0.9px solid var(--gray-dark);
+  background-color: var(--color-white);
+  position: absolute;
+  height: 13.22%;
+  width: 41.34%;
+  top: 44.41%;
+  right: 53.51%;
+  bottom: 42.38%;
+  left: 5.15%;
+  border-radius: 4.51px;
+  box-sizing: border-box;
+}
+.disciplina {
+  position: absolute;
+  top: 38.46%;
+  left: 5.48%;
+}
+.component11Parent {
+  position: absolute;
+  top: 353px;
+  left: 460px;
+  width: 816px;
+  height: 273px;
+  text-align: left;
+  font-size: 10.82px;
+  color: var(--color-black);
+  font-family: var(--inter);
+}
