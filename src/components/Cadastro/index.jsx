@@ -2,7 +2,10 @@ import styles from './styles.module.css';
 
 export default function Cadastro() {
     return (
-        <>
+        <div className={styles.container}>
+            <div className={styles.imagemgrande}>
+                <img src='imagemcadastro.png' alt="Imagem de cadastro" />
+            </div>
             <form className={styles.form}>
                 <div className={styles.imagem}>
                     <img src='logo.png' alt="Logo" />
@@ -29,9 +32,6 @@ export default function Cadastro() {
 
                 <button type="submit" className={styles.submitButton}>Criar conta</button>
             </form>
-            <div className={styles.imagemgrande}>
-                <img src='imagemcadastro.png' alt="Imagem de cadastro"/>
-            </div>
-        </>
+        </div>
     );
 }
