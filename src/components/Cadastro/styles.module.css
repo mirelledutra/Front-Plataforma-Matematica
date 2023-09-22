@@ -23,7 +23,12 @@
 .imagem {
     text-align: center;
 }
-
+.imagemgrande {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
 .inputGroup {
     color: #FFFFFF;
     margin-bottom: 40px;
