@@ -1,6 +1,21 @@
 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
     background-color: #3E4F48;
-    width: 100%;
-    height: 72px;
     margin-bottom: 30px;
+}
+.logosprojeto {
+    display: flex;
+    align-items: center; 
+    margin-left: 7.02vh;
+    gap: 5vh;
+}
+
+.redessociais {
+    display: flex;
+    margin-right: 10.6vh;
+    align-items: center;  
+    gap: 3vh;
 }

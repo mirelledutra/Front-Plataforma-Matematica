@@ -1,3 +1,5 @@
+// componente de cadastro de usuário
+
 import styles from './styles.module.css';
 import Link from 'next/link';
 
