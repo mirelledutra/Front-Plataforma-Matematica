@@ -1,6 +1,9 @@
 import styles from './styles.module.css';
+import Link from 'next/link';
+
 
 export default function Cadastro() {
+
     return (
         <div className={styles.container}>
             <div className={styles.imagemgrande}>
@@ -31,6 +34,8 @@ export default function Cadastro() {
                 </div>
 
                 <button type="submit" className={styles.submitButton}>Criar conta</button>
+
+                <Link className={styles.botaoHome} href="/">Retornar ao painel</Link>
             </form>
         </div>
     );
