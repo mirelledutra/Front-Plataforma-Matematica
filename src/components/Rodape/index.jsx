@@ -15,6 +15,10 @@ export default function Rodape() {
                     <img src="facebook.png" alt="Logo do Facebook" />
                 </div>
             </div>
+            <div className={styles.descricao}>
+                <img src="Vector.svg" alt="imagem de logo" />
+                <p>Plataforma de Ensino - 2023. Todos os direitos reservados</p>
+            </div>
         </footer>
     )
 }
