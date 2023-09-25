@@ -8,7 +8,7 @@ function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>front-end-plataforma</title>
+        <title>Plataforma de matemática</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

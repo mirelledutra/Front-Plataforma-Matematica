@@ -1,0 +1,9 @@
+.barrarolagemChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-gainsboro-200);
+    width: 8px;
+    height: 606px;
+  }
+  

@@ -1,0 +1,47 @@
+.barrapesquisaChild {
+    position: absolute;
+    top: 0;
+    left: 425px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro-100);
+    width: 552px;
+    height: 41px;
+  }
+  .pesquisar {
+    position: absolute;
+    top: 7px;
+    left: 466.03px;
+    display: flex;
+    align-items: center;
+    width: 105.43px;
+    height: 28px;
+  }
+  .lupaimgIcon {
+    position: absolute;
+    top: 11px;
+    left: 936.15px;
+    width: 20.95px;
+    height: 20px;
+    object-fit: cover;
+  }
+  .barrapesquisaItem {
+    position: absolute;
+    top: 65.5px;
+    left: -0.5px;
+    border-top: 1px solid var(--color-darkgray);
+    box-sizing: border-box;
+    width: 1181px;
+    height: 1px;
+  }
+  .barrapesquisa {
+    position: absolute;
+    top: 56px;
+    left: 257px;
+    width: 1180px;
+    height: 66px;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--color-dimgray);
+    font-family: var(--font-roboto);
+  }
+  
