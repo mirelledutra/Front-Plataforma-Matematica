@@ -2,6 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '../styles/global.css'; 
+import BarraPesquisa from '@/components/BarraPesquisa';
+import BarraRolagem from '@/components/BarraRolagem';
+import MenuLateral from '@/components/MenuLateral';
+import styles from '../styles/app.module.css';
 function MyApp(props) {
   const { Component, pageProps } = props;
 
@@ -16,6 +20,7 @@ function MyApp(props) {
       </Head>
       {/* Inclua qualquer componente de layout aqui, como um cabeçalho ou menu */}
       <Component {...pageProps} />
+    
     </React.Fragment>
   );
 }

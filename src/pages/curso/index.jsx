@@ -1,8 +1,8 @@
 //tela criada por Mirelle Dutra --- tela padrão com menu lateral
-import BarraPesquisa from "../components/barra-pesquisa";
-import BarraRolagem from "../components/barra-rolagem";
-import MenuLateral from "../components/menu-lateral";
-import styles from "./index.module.css";
+import BarraPesquisa from "../../components/BarraPesquisa";
+import BarraRolagem from "../../components/BarraRolagem";
+import MenuLateral from "../../components/MenuLateral";
+import styles from "./styles.module.css";
 
 const CadastrarListarCurso = ()=>{
   return (
