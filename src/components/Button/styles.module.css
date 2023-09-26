@@ -1,7 +1,7 @@
-/* MeuBotao.module.css */
+
 
 .botao-novo {
-    width: 175px; /* Largura fixa */
+    width: 175px; 
     height: 50px;
     background-color: #096E46;
     color: #fff;
@@ -9,10 +9,11 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin-right: 10px; /* Espaçamento horizontal entre os botões */
+    margin-right: 10px; 
   }
   
   .botao-novo:hover {
-    background-color: #137c6e;
+    background-color: #05f167;
   }
+  
   

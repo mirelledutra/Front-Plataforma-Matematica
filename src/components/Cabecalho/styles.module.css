@@ -4,57 +4,54 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 200px;
+  border-bottom: 0.25px solid;
+  border-color: rgb(214, 214, 214);
+} 
+
+.logo img {
+    width: 100px; 
+    height: auto; 
 }
-  /* Estilizando a logo */
-  .logo img {
-    width: 100px; /* Tamanho da logo */
-    height: auto; /* Altura ajustável para manter a proporção */
-  }
 
 .header-buttons {
   list-style-type: none;
   padding: 0;
   display: flex;
-  gap: 10px; /* Espaçamento horizontal entre os botões */
+  gap: 10px; 
+}
+  
+.header-buttons li {
+    margin-right: 10px;
 }
 
-/* Restante do CSS... */
-
-  
-  /* Estilizando os botões */
-  .header-buttons li {
-    margin-right: 10px;
-  }
-  
-  .header-buttons li:last-child {
+.header-buttons li:last-child {
     margin-right: 0;
-  }
-  
-  .header-buttons a {
+}
+
+.header-buttons a {
     display: inline-block;
     padding: 10px 20px;
-    width: 250px; /* Largura do botão */
-    height: 50px; /* Altura do botão */
+    width: 250px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
-    color: #ffffff; /* Cor do texto */
+    color: #ffffff; 
     font-weight: bold;
-    border: 2px solid #096E46; /* Cor da borda para "Saiba Mais" e "Cadastrar" */
-  }
+    border: 2px solid #096E46; 
+}
   
-  /* Estilizando o botão "Saiba Mais" */
-  .header-buttons li:nth-child(1) a {
-    background-color: #096E46; /* Cor de fundo para "Saiba Mais" */
-  }
+.header-buttons li:nth-child(1) a {
+    background-color: #096E46; 
+}
   
-  /* Estilizando o botão "Cadastrar" */
-  .header-buttons li:nth-child(2) a {
-    background-color: transparent; /* Botão transparente */
-  }
+
+.header-buttons li:nth-child(2) a {
+    background-color: transparent; 
+}
   
-  /* Estilizando o botão "Login" */
-  .header-buttons li:nth-child(3) a {
-    background-color: #096E46; /* Cor de fundo para "Login" */
-  }
+
+.header-buttons li:nth-child(3) a {
+    background-color: #096E46; 
+}
   

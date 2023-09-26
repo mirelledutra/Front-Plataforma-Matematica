@@ -1,7 +1,5 @@
-// Header.js
-
 import React from 'react';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.svg';
 import styles from './styles.module.css';
 import Button from '../Button/index.jsx';
 
@@ -13,11 +11,9 @@ function Header() {
       </div>
       <nav>
         <ul className={styles.headerButtons}>
-          <li>
             <Button texto="Saiba Mais" />
             <Button texto="Cadastrar" />
             <Button texto="Login" />
-          </li>
         </ul>
       </nav>
     </header>
