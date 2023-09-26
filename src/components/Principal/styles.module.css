@@ -10,3 +10,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.textocentral {
+    display: block;
+    border-radius: 5000vh;
+}
+
