@@ -1,0 +1,131 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -7vh;
+    margin-top: -5vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: 692px;
+    margin-right: auto;
+    margin-left: 100px;
+    background-color: #0D1216;
+    border-radius: 20px;
+    gap: -1vh;
+}
+
+.imagem {
+    text-align: center;
+}
+
+.imagemgrande {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.inputGroup {
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    gap: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    margin-bottom: 5px;
+    width: 60%;
+}
+
+.input {
+    padding: 10px;
+    background-color: #EBEBEB;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    height: 40px;
+    width: 70%;
+    max-width: 300px;
+}
+
+.textrecovery {
+    color: #FFFFFF;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    margin-top: -3.1vh;
+    margin-bottom: 2.1vh;
+
+}
+
+.submitButton {
+    align-self: center;
+    margin-top: 4.5vh;
+    width: 50%;
+    max-width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    color: #225943;
+    background: #25D691;
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.criarConta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+
+}
+
+.textCriarConta {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.VoltarInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+}
+
+.textVoltar {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        width: 90%;
+        max-width: none;
+        margin: 20px auto;
+    }
+
+    .input {
+        width: 100%;
+    }
+}
