@@ -1,17 +1,40 @@
-.main {
+.container {
     display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    padding: 200px;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 10vh;
+    margin-bottom: 19vh;
+}
+.info {
+    flex: 1;
+    margin-left: 10vh;
+}
+.imagem {
+    flex: 1;
+}
+.titulo {
+    display: flex;
 }
 
-.main p {
-    margin-top: 20px;
+.titulo h1 {
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 20px;
 }
 
-.textocentral {
-    display: block;
-    border-radius: 5000vh;
+.subtitulo h2 {
+    font-weight: 500;
+    color: #225943;
+    font-size: 28px;
 }
 
+.texto {
+    margin-top: 2vh;
+}
+
+.texto p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
