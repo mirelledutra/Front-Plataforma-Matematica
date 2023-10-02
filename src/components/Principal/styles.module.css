@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 200px;
+}
+
+.main p {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.textocentral {
+    display: block;
+    border-radius: 5000vh;
+}
+
