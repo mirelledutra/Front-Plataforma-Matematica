@@ -1,23 +1,18 @@
-import React from 'react';
-import logo from '../../images/logo.svg';
-import styles from './styles.module.css';
-import Button from '../Button/index.jsx';
+import Link from 'next/link'
+import styles from './styles.module.css'
 
-function Header() {
+export default function Cabecalho() {
   return (
-    <header className={styles.header}>
-      <div className={styles.logo}>
-        <img src={logo} alt="Logo da empresa" />
-      </div>
-      <nav>
-        <ul className={styles.headerButtons}>
-            <Button texto="Saiba Mais" />
-            <Button texto="Cadastrar" />
-            <Button texto="Login" />
-        </ul>
-      </nav>
-    </header>
-  );
+    <>
+      <header className={styles.header}>
+        <img className={styles.imagem} src="logo-branca-4m.svg" alt="" />
+        <nav className={styles.nav}>
+          <Link className={styles.rotas} href="/Saibamais">Saiba Mais</Link>
+          <Link className={styles.rotas} href="/Cadastrar">Cadastrar</Link>
+          <Link className={styles.rotas} href="/Login">Login</Link>
+        </nav>
+      </header>
+      <hr />
+    </>
+  )
 }
-
-export default Header;
