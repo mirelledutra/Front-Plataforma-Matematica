@@ -1,11 +1,14 @@
-// essa é a página Home
+import Cabecalho from '../components/Cabecalho/index.jsx';
+import Principal from '../components/Principal/index.jsx';
+import Rodape from '../components/Rodape/index.jsx';
 
-import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
-    <h1>Essa é a página Inicial</h1>
-    </>
+    <div>
+      <Cabecalho />
+      <Principal />
+      <Rodape />
+    </div>
   )
-}   
+}

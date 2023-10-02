@@ -1,0 +1,16 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2vh 20vh;
+  border-bottom: 0.25px solid;
+  border-color: rgb(214, 214, 214);
+} 
+
+.logo img {
+    width: 2vh; 
+    height: auto; 
+}
+  
