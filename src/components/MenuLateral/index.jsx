@@ -8,7 +8,7 @@ const MenuLateral = () => {
       <img className={styles.logoIcon} alt="" src="/logo.png" />
       <div className={styles.botaosair}>
         <div className={styles.sair}>Sair</div>
-        <img className={styles.iconSair} alt="" src="/iconSair.png" />
+        <img className={styles.iconSair} alt="" src="/IconSair.png"/>
       </div>
       <div className={styles.botaocurso}>
         <img className={styles.bookIcon} alt="" src="/iconBook.png" />
