@@ -22,7 +22,7 @@
     object-fit: cover;
   }
   .sair1 {
-    margin: 0 !important;
+    margin: 0;
     top: 18px;
     left: 72.07px;
     letter-spacing: -0.02em;
@@ -30,18 +30,19 @@
     font-weight: 600;
     z-index: 0;
   }
-  .icon,
+  .iconSair,
   .sair,
   .sair1 {
     position: absolute;
   }
-  .icon {
-    margin: 0 !important;
-    top: 16px;
-    left: 19.93px;
-    width: 26px;
-    height: 26px;
-    z-index: 1;
+  .iconSair {
+  top: 880px;
+  left: 35px;
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+
   }
   .sair {
     height: 5.13%;
@@ -71,15 +72,18 @@
     letter-spacing: -0.02em;
     line-height: 22px;
     z-index: 1;
+    cursor: pointer;
+    
   }
-  .iconmaior {
+  .iconMaior {
     position: absolute;
-    margin: 0 !important;
+    margin: 0;
     top: 6.5px;
     left: 190.5px;
     width: 9.09px;
     height: 14.67px;
     z-index: 2;
+
   }
   .botaocurso {
     position: absolute;
@@ -90,8 +94,10 @@
     align-items: center;
     justify-content: flex-start;
     gap: var(--gap-xs);
+    cursor: pointer;
+
   }
-  .iconmaior1 {
+  .iconMaior1 {
     position: absolute;
     margin: 0 !important;
     top: 5.5px;
@@ -109,8 +115,9 @@
     align-items: center;
     justify-content: flex-start;
     gap: var(--gap-smi);
+    cursor: pointer;
   }
-  .iconmaior2 {
+  .iconMaior2 {
     position: absolute;
     margin: 0 !important;
     top: 4.5px;

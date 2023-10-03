@@ -1,31 +1,4 @@
-.perfilIcon {
-    position: absolute;
-    height: 3.52%;
-    width: 4.79%;
-    top: 6.15%;
-    right: 3.96%;
-    bottom: 90.33%;
-    left: 91.25%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  .barraRolagemChild {
-    position: absolute;
-    top: 485px;
-    left: 0;
-    border-radius: 0 0 var(--br-3xs) var(--br-3xs);
-    background-color: #25d691;
-    width: 8px;
-    height: 164px;
-  }
-  .barraRolagem {
-    position: absolute;
-    top: 257px;
-    left: 1357px;
-    width: 8px;
-    height: 649px;
-  }
+
   .cadastraListarCurso {
     position: relative;
     border-radius: var(--br-xl);
@@ -34,4 +7,44 @@
     height: 1024px;
     overflow: hidden;
   }
-  
+  .cadastrarCursoButton{
+    background: #08624C;
+    padding: 15px 80px;
+    border-radius: 10px;
+    border: none;
+    font: medium;
+    font-size: 16px;
+    color:#ffff;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 173px;
+    margin-left: 300px;
+    
+  }
+
+  .buttonIcon{
+    margin-right: 15px;
+     align-items: center;
+   
+  }
+
+
+  .cadastrarAulaButton{
+    background: #08624C;
+    padding: 15px 80px;
+    border-radius: 10px;
+    border:none;
+    font: medium;
+    font-size: 16px;
+    color:#ffff;
+    cursor: pointer;
+    margin-bottom: px;
+    margin-top: 173px;
+    margin-left: 90px;
+
+  }
+  .buttonIcon1{
+    margin: 15px;
+   
+       
+  }

@@ -2,7 +2,14 @@
 import styles from "./styles.module.css";
 
 const BarraRolagem = () => {
-  return <div className={styles.barrarolagemChild} />;
+  return (
+   
+    <div className={styles.barrarolagem}>
+    <div className={styles.barrarolagemChild}/>
+    </div>
+  
+  )
+ 
 };
 
 export default BarraRolagem;
