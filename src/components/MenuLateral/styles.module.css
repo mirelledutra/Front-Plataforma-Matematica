@@ -20,6 +20,10 @@
     overflow: hidden;
     max-height: 100%;
     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .sair1 {
     margin: 0;
@@ -60,6 +64,9 @@
     padding: var(--padding-mini) var(--padding-60xl);
     box-sizing: border-box;
     gap: var(--gap-3xs);
+    cursor: pointer;
+    text-decoration: none;
+    color: white
   }
   .bookimgIcon {
     position: relative;
@@ -95,11 +102,13 @@
     justify-content: flex-start;
     gap: var(--gap-xs);
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 
   }
   .iconMaior1 {
     position: absolute;
-    margin: 0 !important;
+    margin: 0;
     top: 5.5px;
     left: 188.46px;
     width: 9.09px;
@@ -116,10 +125,12 @@
     justify-content: flex-start;
     gap: var(--gap-smi);
     cursor: pointer;
+    text-decoration: none;
+    color: white;
   }
   .iconMaior2 {
     position: absolute;
-    margin: 0 !important;
+    margin: 0;
     top: 4.5px;
     left: 190.5px;
     width: 9.09px;
@@ -135,6 +146,9 @@
     align-items: flex-end;
     justify-content: flex-start;
     gap: var(--gap-smi);
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
   }
   .menulateral {
     position: absolute;
@@ -143,8 +157,11 @@
     width: 257px;
     height: 1024px;
     text-align: left;
-    font-size: var(--font-size-base);
+     font-size: var(--font-size-base);
     color: var(--color-white);
     font-family: var(--font-poppins);
   }
   
+  .link {
+    text-decoration: none !important; /* Remove o sublinhado do link */
+}

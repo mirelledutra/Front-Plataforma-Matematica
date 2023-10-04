@@ -9,6 +9,7 @@ import Grid from '@/components/Grid';
 
 const CadastrarListarCurso = ()=>{
   return (
+    
     <div className={styles.cadastrarlistarcurso}>
       <BarraPesquisa />
       <BarraRolagem />
@@ -26,6 +27,7 @@ const CadastrarListarCurso = ()=>{
       <Formulario />
       <Grid />
     </div>
+    
     
 
   );
