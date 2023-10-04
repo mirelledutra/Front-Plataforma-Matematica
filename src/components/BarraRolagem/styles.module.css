@@ -1,19 +1,29 @@
    .barrarolagem {
-    position: absolute;
+    position: fixed;
     top: 280px;
     left: 1750px;
-    background-color: #D9D9D9;
+    background-color: #25d691;
     width: 8px;
     height: 606px;
-    
+    max-height: 606px;
+    transition: heigt 0.3s ease;
+    z-index: 999;
+    flex-direction: column;
   }
   .barrarolagemChild {
-    position: absolute;
+    position:absolute;
     top: 0px;
     left:1px;
     border-radius: 0px;
-    background-color: #25d691;
+    background-color: #d9d9d9;
     width: 8px;
     height: 164px;
+    height: calc(30%);
+    
    
   }
+ 
+   
+
+
+  
