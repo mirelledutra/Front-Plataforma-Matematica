@@ -14,7 +14,7 @@ const BarraPesquisa = ()=> {
         
         
         <div className={styles.barra}/>
-        <div className={styles.title}>Curso</div>
+        
         <div>
             <div className={styles.barraperfil}/>
             <Link href= "/perfiluser">

@@ -1,0 +1,97 @@
+.barraRolagemChild {
+  position: absolute;
+  top: 485px;
+  left: 0;
+  border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+  background-color: #25d691;
+  width: 8px;
+  height: 164px;
+}
+.barraRolagem {
+  position: absolute;
+  top: 257px;
+  left: 1357px;
+  width: 8px;
+  height: 649px;
+}
+.cadastraListarCurso {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+}
+.titulo {
+  text-align: right;
+  margin-top: 20px; 
+}
+.imagemblog {
+  position: absolute;
+  top: 80vh; 
+  left: 50vw; 
+  transform: translate(-80%, -50%); 
+}
+.titulo{
+  color: #096E46;
+  font: var(--font-poppins);
+  font-size: 2rem; 
+  position: absolute;
+  left: 15%;
+  top: 15%;
+}
+.subtitulo{
+  color: black;
+  font: Arial;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 15%;
+  top: 22%;
+
+}
+.botao {
+  position: absolute;
+  top: 60vh; 
+  left: 15%; 
+  background-color: #25D691;
+  font-size: 1.0rem;
+  color: white;
+  font: var(--font-poppins);
+  width: 160px;
+  height: 50px; 
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+  padding: 0; 
+}
+
+.inicio{
+  color: #096E46;
+  font: var(--font-poppins);
+  font-size: 2rem; 
+  position: absolute;
+  left: 15%;
+  top: 6%;
+}
+
+
+.box1{
+  position: relative;
+  top: 50vh; 
+  left: 30vw; 
+  transform: translate(-90%, -90%); 
+}
+.box2{
+  position: relative;
+  top: 50vh; 
+  left: 35vw; 
+  transform: translate(-90%, -90%); 
+}
+.box3{
+  position: relative;
+  top: 50vh;
+  left: 40vw; 
+  transform: translate(-90%, -90%); 
+}
