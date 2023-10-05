@@ -4,7 +4,7 @@ import BarraRolagem from '../../components/BarraRolagem';
 import MenuLateral from '../../components/MenuLateralAluno';
 import styles from './styles.module.css';
 
-const Perfil = () => {
+export default function Perfil ()  {
   const [nome, setNome] = useState('');
   const [usuario, setUsuario] = useState('');
   const [email, setEmail] = useState('');
@@ -141,6 +141,6 @@ const Perfil = () => {
       </button>
     </div>
   );
-};
+}
 
-export default Perfil;
+

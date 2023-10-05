@@ -1,7 +1,7 @@
-//Auterado por Adriani Gomes
+//criado por Mirelle Dutra
 import styles from "./styles.module.css";
 
-export default function MenuLateralAluno()  {
+const MenuLateral = () => {
   return (
     <div className={styles.menulateral}>
       <div className={styles.menulateralChild} />
@@ -38,3 +38,4 @@ export default function MenuLateralAluno()  {
   );
 };
 
+export default MenuLateral;

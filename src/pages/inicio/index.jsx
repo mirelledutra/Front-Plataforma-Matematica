@@ -4,7 +4,7 @@ import MenuLateral from "../../components/MenuLateralAluno";
 import styles from "./styles.module.css";
 import Link from "next/link";
 
-const Inicio = () => {
+export default function Inicio() {
   return (
     <div className={styles.cadastrarlistarcurso}>
       <BarraPesquisa />
@@ -25,6 +25,5 @@ const Inicio = () => {
       <img className={styles.box3} src="/Group 358.png" />
     </div>
   );
-};
+}
 
-export default Inicio;
