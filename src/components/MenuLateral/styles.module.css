@@ -1,150 +1,102 @@
-.menulateralChild {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 0 var(--br-xl) var(--br-xl) 0;
-    background-color: var(--color-gray);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    width: 257px;
-    height: 1024px;
-  }
-  .logoIcon {
-    position: absolute;
-    height: 13.38%;
-    width: 61.48%;
-    top: 0;
-    right: 18.68%;
-    bottom: 86.62%;
-    left: 19.84%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  .sair1 {
-    margin: 0;
-    top: 18px;
-    left: 72.07px;
-    letter-spacing: -0.02em;
-    line-height: 22px;
-    font-weight: 600;
-    z-index: 0;
-  }
-  .iconSair,
-  .sair,
-  .sair1 {
-    position: absolute;
-  }
-  .iconSair {
-  top: 880px;
-  left: 35px;
+
+
+.sidebar .text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar .image {
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  border-radius: 0 5vh 0 0;
   position: relative;
-  width: 24px;
-  height: 24px;
+  top: 0;
+  left: 0;
+  height: 100;
+  width: 250px;
+  background: rgba(13, 18, 22, 1);
+  padding: 10px 14px;
 
-
-  }
-  .sair {
-    height: 5.13%;
-    width: 91.44%;
-    top: 84.86%;
-    right: 3.5%;
-    bottom: 10.01%;
-    left: 5.06%;
-    background-color: var(--color-gray);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-mini) var(--padding-60xl);
-    box-sizing: border-box;
-    gap: var(--gap-3xs);
-  }
-  .bookimgIcon {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    z-index: 0;
-  }
-  .curso {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 22px;
-    z-index: 1;
-    cursor: pointer;
-    
-  }
-  .iconMaior {
-    position: absolute;
-    margin: 0;
-    top: 6.5px;
-    left: 190.5px;
-    width: 9.09px;
-    height: 14.67px;
-    z-index: 2;
-
-  }
-  .botaocurso {
-    position: absolute;
-    top: 282px;
-    left: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-xs);
-    cursor: pointer;
-
-  }
-  .iconMaior1 {
-    position: absolute;
-    margin: 0 !important;
-    top: 5.5px;
-    left: 188.46px;
-    width: 9.09px;
-    height: 14.67px;
-    z-index: 2;
-  }
-  .botaoinicio {
-    position: absolute;
-    top: 181px;
-    left: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-smi);
-    cursor: pointer;
-  }
-  .iconMaior2 {
-    position: absolute;
-    margin: 0 !important;
-    top: 4.5px;
-    left: 190.5px;
-    width: 9.09px;
-    height: 14.67px;
-    z-index: 2;
-  }
-  .botaousuario {
-    position: absolute;
-    top: 233px;
-    left: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: var(--gap-smi);
-  }
-  .menulateral {
-    position: absolute;
-    top: 0;
-    left: -2px;
-    width: 257px;
-    height: 1024px;
-    text-align: left;
-    font-size: var(--font-size-base);
-    color: var(--color-white);
-    font-family: var(--font-poppins);
-  }
+  height: 100vh;
+  border-radius: 5vh 5vh 5vh 0vh;
+  margin: 0;
+  padding: 0;
   
+}
+
+.sidebar .header {
+  position: relative;
+}
+
+.sidebar .imagetext .img {
+  width: 40px;
+  border-radius: 6px;
+}
+
+.sidebar .header .imagetext {
+  display: flex;
+  align-items: center;
+}
+
+.header .imagetext .headertext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.sidebar li {
+  min-height: 60px;
+  width: 100%;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sidebar li a {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+
+}
+
+.sidebar li a:hover {
+  background: #19ad88;
+}
+
+.sidebar .navtext {
+  display: flex;
+  text-align: center;
+}
+
+.imagem {
+  margin-left: 25px;
+  height: 25px;
+  width: 25px;
+  color: #E4E9F7;
+}
+
+.texto {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+
+.menuLinks {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,30 @@
+.pagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+}
+
+.menulateral {
+  display: flex;
+  flex: 0 0 auto;
+  width: 250px; 
+  background-color: #08624c;
+  color: #ffffff;
+}
+
+.conteudo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  overflow-y: visible;
+  padding: 20px;
+}
+
+.rodape {
+  flex: 0 0 auto;
+
+  background-color: #ffffff;
+  color: #ffffff;
+}

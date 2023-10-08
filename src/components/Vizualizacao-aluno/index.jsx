@@ -1,10 +1,10 @@
 import styles from './styles.module.css';
 
 
-export default function V() {
+export default function Visualizar() {
     return (
      <>
-     
+        <div></div>
      </>
     )
 }

@@ -10,7 +10,7 @@ export default function Formulario(){
            </h1>
            <input className={styles.filtro}></input>
            <button className={styles.filtrarButton}>Filtrar</button>
-        </div>
+        </div> 
 
     );
 }
