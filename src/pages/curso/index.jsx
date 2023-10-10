@@ -1,11 +1,13 @@
 //tela criada por Mirelle Dutra --- tela padrão com menu lateral
 import React from 'react';
-import BarraPesquisa from "../../components/BarraPesquisa";
-import BarraRolagem from "../../components/BarraRolagem";
-import MenuLateral from "../../components/MenuLateral";
-import styles from "../curso/styles.module.css";
-import Formulario from '@/components/Formulario/formulario';
-import Grid from '@/components/Grid';
+import BarraPesquisa from '@/components/BarraPesquisa';
+import BarraRolagem from '@/components/BarraRolagem';
+import MenuLateral from '@/components/MenuLateral';
+
+import FormularioFiltrarCurso from '@/components/FormularioFiltrarCurso';
+ 
+import styles from "./styles.module.css"
+import GridCurso from '@/components/GridCurso';
 
 const CadastrarListarCurso = ()=>{
   return (
@@ -14,6 +16,7 @@ const CadastrarListarCurso = ()=>{
       <BarraPesquisa />
       <BarraRolagem />
       <MenuLateral />
+
       <div className={styles.buttonContainer}>
         <button className={styles.cadastrarCursoButton}>
           <img className={styles.buttonIcon} src="/add.png" alt="" />
@@ -24,8 +27,8 @@ const CadastrarListarCurso = ()=>{
           Cadastrar Aula
         </button>
       </div>
-      <Formulario />
-      <Grid />
+      <FormularioFiltrarCurso />
+      <GridCurso />
     </div>
     
     

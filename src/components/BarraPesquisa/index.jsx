@@ -1,7 +1,7 @@
 //criado por Mirelle Dutra
 import styles from "../BarraPesquisa/styles.module.css";
 import Link from "next/link";
-const BarraPesquisa = ()=> {
+export default function BarraPesquisa(){
 
 
     return (
@@ -25,5 +25,5 @@ const BarraPesquisa = ()=> {
 
     );
   };
-  export default BarraPesquisa;
+
   
