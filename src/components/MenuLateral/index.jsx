@@ -1,7 +1,7 @@
 //criado por Mirelle Dutra
 import styles from "./styles.module.css";
 import Link from "next/link";
-const MenuLateral = () => {
+export default function MenuLateral() {
   return (
     <div className={styles.menulateral}>
       
@@ -40,4 +40,4 @@ const MenuLateral = () => {
   );
 };
 
-export default MenuLateral;
+
