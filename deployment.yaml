@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: matematica
+spec:
+  selector:
+    matchLabels:
+      app: matematica
+  template:
+    metadata:
+      labels:
+        app: matematica
+    spec:
+      containers:
+      - name: matematica
+        image: drika/matematica :latest
+        resources: {}
+          
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: matematica
+spec:
+  selector:
+    app: matematica
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 3000
+
