@@ -1,0 +1,33 @@
+.buttonContainer{
+  margin: 80px;
+  margin-left: 300px;
+
+}
+.cadastrarCursoButton,
+.cadastrarDisciplinaButton,
+.cadastrarAulaButton {
+  display:inline-flex;
+  background: #08624C;
+  padding: 5px 90px;
+  align-items: center;
+    border-radius: 10px;
+    border:none;
+    font: medium;
+    font-size: 16px;
+    color:#ffff;
+    cursor: pointer;
+    margin-left: 90px;
+   
+  
+}
+  .buttonIcon{
+    margin: 15px;
+ }
+ 
+  .buttonIcon1{
+    margin: 15px;
+  }
+  
+  .buttonIcon2{
+    margin: 15px;
+}

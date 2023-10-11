@@ -1,5 +1,5 @@
 .gridRow {
-    margin: 30px;
+    margin-top: 0 px;;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,7 +15,7 @@
 
 }
 .firstRow{
-    display: flex;
+    display:flex;
     flex-direction:row;
     justify-content:space-between;
     font-family: 'inter', sans-serif;
@@ -25,12 +25,15 @@
     padding: 1px 10px;
     border-radius: 5px;
 
+
+
 }
   
 .gridCell {
     flex: 1;
-    text-align: center;
+    text-align:center;
     padding: 10px;
+    justify-content:space-between;
 }
   
 .headerCell {
@@ -47,24 +50,8 @@
 
 .iconContainer {
     display: flex;
-    justify-content:space-evenly;
-    align-items: center;
+    justify-content:end;
+    margin: 10px;
+    align-items:end;
 }
 
-.iconEye {
-    width: 20px;
-    height: 20px;
-
-}
-
-.iconEdit {
-    width: 20px;
-    height: 20px;
-
-}
-
-.iconTrash {
-    width: 20px;
-    height: 20px;
-}
-  

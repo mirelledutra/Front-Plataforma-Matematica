@@ -1,39 +1,32 @@
 //tela criada por Mirelle Dutra --- tela padrão com menu lateral
 import React from 'react';
-import BarraPesquisa from '@/components/BarraPesquisa';
+
 import BarraRolagem from '@/components/BarraRolagem';
 import MenuLateral from '@/components/MenuLateral';
-
+import BotoesCadListCurso from '@/components/Botoes';
+import BarraPesquisaCadListCurso from '@/components/BarraPesquisaCadListCurso';
 import FormularioFiltrarCurso from '@/components/FormularioFiltrarCurso';
- 
-import styles from "./styles.module.css"
 import GridCurso from '@/components/GridCurso';
 
-const CadastrarListarCurso = ()=>{
+
+
+
+export default function CadastrarListarCurso(){
+
+
+
+
   return (
     
-    <div className={styles.cadastrarlistarcurso}>
-      <BarraPesquisa />
+  <>
+      <BarraPesquisaCadListCurso />
       <BarraRolagem />
       <MenuLateral />
-
-      <div className={styles.buttonContainer}>
-        <button className={styles.cadastrarCursoButton}>
-          <img className={styles.buttonIcon} src="/add.png" alt="" />
-          Cadastrar Curso
-        </button>
-        <button className={styles.cadastrarAulaButton}>
-          <img classNam={styles.buttonIcon1} src="/add.png" alt="" />
-          Cadastrar Aula
-        </button>
-      </div>
+      <BotoesCadListCurso/>
       <FormularioFiltrarCurso />
       <GridCurso />
-    </div>
-    
-    
 
+  </>  
   );
 };
 
-export default CadastrarListarCurso;
