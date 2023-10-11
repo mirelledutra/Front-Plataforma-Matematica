@@ -26,7 +26,11 @@ export default function Menu() {
                     <ul className={styles.menulinks}>
 
                         <li>
+<<<<<<< HEAD
                             <a className={styles.link} href="/">
+=======
+                            <a className={styles.link} href="">
+>>>>>>> 17-visualizacao-curso-aula
                                 <AiOutlineHome className={styles.imagem} />
                                 <span>Início</span>
                             </a>
@@ -65,5 +69,8 @@ export default function Menu() {
         </div>
     )
 }
+<<<<<<< HEAD
 
 //aaaaa//
+=======
+>>>>>>> 17-visualizacao-curso-aula
