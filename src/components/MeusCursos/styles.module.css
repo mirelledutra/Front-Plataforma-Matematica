@@ -1,0 +1,272 @@
+.tela{
+    background-color: rgb(248, 248, 248)
+    }
+
+    .MeusCursos_novo{
+        display: inline-flex
+        
+    }
+
+    .menulateral {
+
+        position:fixed;
+        top:0%;
+        left: 0%;
+        width: 40dvh;
+        height: max-content;
+        
+  }
+  .tables{
+    width: 100%;
+    max-width: 150vh;
+    margin-block: 1rem;
+    border-collapse: collapse;
+    top: 10%;
+   
+  }
+
+  .nova_linha{
+   
+    height: 10vh;
+    border-bottom: 0.1vh solid #ccc;
+    text-align: center;
+   
+  }
+
+  .nova_linha:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+
+  .Head{
+    background-color: #f2f2f2;
+    height: 11vh;
+    
+    
+  }
+
+
+    .FormularioCursos{
+        position: sticky;
+        margin-left: 35dvh;
+        width: 100%;
+        
+    }
+
+  .pesquisar {
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    padding: 10px;
+    padding-bottom: 10%;
+    
+   
+
+  }
+
+  .barra {
+    position: fixed;
+    background: rgba(222, 222, 222, 1);
+    border-radius: 20px;
+    height: 25px;
+    border-radius: 20px;
+    right: 95px;
+    top: 2%;
+    
+    
+  }
+
+  .icon {
+
+    position: fixed;
+    right: 120px;
+    font-size: 20px;
+    color: rgb(141, 141, 141);
+    border: rgba(222, 222, 222, 0); /* Remover a borda */
+
+  }
+
+
+  .fotoPerfil{
+    position: fixed;
+    top: 02%;
+    right: 50px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+
+
+
+  }
+
+.nomepgn {
+    position: fixed;
+    top: 2%;
+    color: rgba(34, 89, 67, 1);
+    font-family: Poppins;
+    font-size: 35px;
+
+}
+.linha{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #5b5a5a;
+   
+}
+.subtl{
+    
+    color: rgba(34, 89, 67, 1);
+
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: justified;
+}
+
+
+
+.bordinha{
+
+    position: relative;
+    border: 3px solid rgba(9, 110, 70, 1);
+   
+    top: 20px;
+    left: -765px;
+
+}
+
+.nominho1{
+    position: fixed;
+   
+    height: 15px;
+    
+    top: 5%;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    
+}
+
+.nominho2{
+    position: relative;
+   
+    height: 15px;
+    top: 36px;
+    left: -420px;
+
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.box1{
+    position: relative;
+    
+    height: 115px;
+    top: -5px;
+    left: 1px;
+    border-radius: 10px;
+    border: 2px solid rgba(37, 214, 145, 1)
+}
+
+.box2{
+    position: relative;
+   
+    height: 115px;
+    top: -5px;
+    left: 1px;
+    border-radius: 10px;
+    border: 2px solid rgba(37, 214, 145, 1)
+}
+.box3{
+    position: relative;
+    
+    height: 115px;
+    top: -5px;
+    left: 1px;
+    border-radius: 10px;
+    border: 2px solid rgba(37, 214, 145, 1)
+}
+.box4{
+    position: relative;
+    
+    height: 115px;
+    top: -5px;
+    left: 1px;
+    border-radius: 10px;
+    border: 2px solid rgba(37, 214, 145, 1)
+}
+.box5{
+    position: relative;
+    
+    height: 115px;
+    top: -5px;
+    left: 1px;
+    border-radius: 10px;
+    border: 2px solid rgba(37, 214, 145, 1)
+}
+
+.namebo{
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.textMater{
+    padding-left: 5px;
+    font-family: Poppins;
+    font-size: 20px;
+    color: rgb(0, 70, 12);
+    text-align: justify;
+
+}
+.data{
+    font-family: Poppins;
+    font-size: 17px;
+    text-align: justify;
+    color: rgb(0, 70, 12);
+    padding-left: 5px;
+
+}
+
+.dataCr{
+    position: relative;
+    top: -10px;
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 5px;
+
+}
+.dataCrf{
+    position: relative;
+    top: -10px;
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 5px;
+
+}
+.lorem{
+    position: relative;
+    font-family: Poppins;
+    font-size: 10px;
+    text-align: justify;
+    padding-left: 5px;
+
+}
