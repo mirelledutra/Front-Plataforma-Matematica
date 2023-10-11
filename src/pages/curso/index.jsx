@@ -1,4 +1,5 @@
 //tela criada por Mirelle Dutra --- tela padrão com menu lateral
+import Link from 'next/link';
 import React from 'react';
 
 import BarraRolagem from '@/components/BarraRolagem';
@@ -29,4 +30,3 @@ export default function CadastrarListarCurso(){
   </>  
   );
 };
-
