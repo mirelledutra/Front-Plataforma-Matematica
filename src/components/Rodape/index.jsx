@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 export default function Rodape() {
     return (
-        <footer>
+        <footer className={styles.RodapeBox}>
             <div className={styles.container}>
                 <div className={styles.logosprojeto}>
                     <img src="logobranca.png" alt="Logo do Ifro" />

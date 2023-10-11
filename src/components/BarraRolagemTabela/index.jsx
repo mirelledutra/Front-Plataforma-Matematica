@@ -1,8 +1,7 @@
-//criado por Mirelle Dutra
 import React, {useEffect, useState} from "react";
 import styles from "./styles.module.css";
 
-export default function BarraRolagem (){ 
+const BarraRolagem = () => {
   
     const [scrollPercentage, setScrollPercentage] = useState(0);
 
@@ -24,4 +23,4 @@ export default function BarraRolagem (){
    
 };
 
-
+export default BarraRolagem;

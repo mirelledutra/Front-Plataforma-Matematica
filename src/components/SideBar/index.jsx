@@ -26,14 +26,14 @@ export default function Menu() {
                     <ul className={styles.menulinks}>
 
                         <li>
-                            <a className={styles.link} href="/">
+                            <a className={styles.link} href="">
                                 <AiOutlineHome className={styles.imagem} />
                                 <span>Início</span>
                             </a>
                         </li>
 
                         <li>
-                            <a className={styles.link} href="perfil">
+                            <a className={styles.link} href="Perfil">
                                 <LuUsers className={styles.imagem} />
                                 <span className={styles.texto}>Perfil</span>
                             </a>
@@ -47,7 +47,7 @@ export default function Menu() {
                         </li>
 
                         <li>
-                            <a className={styles.link} href="curso">
+                            <a className={styles.link} href="Cursos">
                                 <PiBookBookmarkLight className={styles.imagem} />
                                 <span className={styles.texto}>Cursos</span>
                             </a>
@@ -65,5 +65,3 @@ export default function Menu() {
         </div>
     )
 }
-
-//aaaaa//
