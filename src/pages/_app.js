@@ -2,8 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '../styles/global.css'; 
-import BarraPesquisa from '@/components/BarraPesquisa';
-import BarraRolagem from '@/components/BarraRolagem';
+
+
 import SideBar from '@/components/SideBar';
 import styles from '../styles/app.module.css';
 function MyApp(props) {
