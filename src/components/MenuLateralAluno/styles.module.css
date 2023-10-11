@@ -1,0 +1,158 @@
+.menulateralChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 var(--br-xl) var(--br-xl) 0;
+  background-color: var(--color-gray);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 257px;
+  height: 1024px;
+}
+.logoIcon {
+  position: absolute;
+  height: 13.38%;
+  width: 61.48%;
+  top: 0;
+  right: 18.68%;
+  bottom: 86.62%;
+  left: 19.84%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.sair1 {
+  margin: 0 !important;
+  top: 18px;
+  left: 72.07px;
+  letter-spacing: -0.02em;
+  line-height: 22px;
+  font-weight: 600;
+  z-index: 0;
+}
+.icon,
+.sair,
+.sair1 {
+  position: absolute;
+}
+.icon {
+  margin: 0 !important;
+  top: 16px;
+  left: 19.93px;
+  width: 26px;
+  height: 26px;
+  z-index: 1;
+}
+.sair {
+  height: 5.13%;
+  width: 91.44%;
+  top: 84.86%;
+  right: 3.5%;
+  bottom: 10.01%;
+  left: 5.06%;
+  background-color: var(--color-gray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mini) var(--padding-60xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.bookimgIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  z-index: 0;
+}
+.curso {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 22px;
+  z-index: 1;
+}
+.iconmaior {
+  position: absolute;
+  margin: 0 !important;
+  top: 6.5px;
+  left: 190.5px;
+  width: 9.09px;
+  height: 14.67px;
+  z-index: 2;
+}
+.botaocurso {
+  position: absolute;
+  top: 330px;
+  left: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.iconmaior1 {
+  position: absolute;
+  margin: 0 !important;
+  top: 5.5px;
+  left: 188.46px;
+  width: 9.09px;
+  height: 14.67px;
+  z-index: 2;
+}
+.botaoinicio {
+  position: absolute;
+  top: 181px;
+  left: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+  color: white;
+  text-decoration: none;
+}
+.iconmaior2 {
+  position: absolute;
+  margin: 0 !important;
+  top: 4.5px;
+  left: 190.5px;
+  width: 9.09px;
+  height: 14.67px;
+  z-index: 2;
+}
+.botaousuario {
+  position: absolute;
+  top: 230px;
+  left: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+  color: white;
+  text-decoration: none;
+}
+.menulateral {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 257px;
+  height: 1024px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+
+.botaomeuscursos{
+position: absolute;
+  top: 280px;
+  left: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+
+}

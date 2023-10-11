@@ -20,13 +20,9 @@
     overflow: hidden;
     max-height: 100%;
     object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .sair1 {
-    margin: 0;
+    margin: 0 !important;
     top: 18px;
     left: 72.07px;
     letter-spacing: -0.02em;
@@ -34,19 +30,18 @@
     font-weight: 600;
     z-index: 0;
   }
-  .iconSair,
+  .icon,
   .sair,
   .sair1 {
     position: absolute;
   }
-  .iconSair {
-  top: 880px;
-  left: 35px;
-  position: relative;
-  width: 24px;
-  height: 24px;
-
-
+  .icon {
+    margin: 0 !important;
+    top: 16px;
+    left: 19.93px;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
   }
   .sair {
     height: 5.13%;
@@ -64,9 +59,6 @@
     padding: var(--padding-mini) var(--padding-60xl);
     box-sizing: border-box;
     gap: var(--gap-3xs);
-    cursor: pointer;
-    text-decoration: none;
-    color: white
   }
   .bookimgIcon {
     position: relative;
@@ -79,36 +71,29 @@
     letter-spacing: -0.02em;
     line-height: 22px;
     z-index: 1;
-    cursor: pointer;
-    
   }
-  .iconMaior {
+  .iconmaior {
     position: absolute;
-    margin: 0;
+    margin: 0 !important;
     top: 6.5px;
     left: 190.5px;
     width: 9.09px;
     height: 14.67px;
     z-index: 2;
-
   }
   .botaocurso {
     position: absolute;
-    top: 282px;
+    top: 330px;
     left: 32px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: var(--gap-xs);
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-
   }
-  .iconMaior1 {
+  .iconmaior1 {
     position: absolute;
-    margin: 0;
+    margin: 0 !important;
     top: 5.5px;
     left: 188.46px;
     width: 9.09px;
@@ -124,13 +109,12 @@
     align-items: center;
     justify-content: flex-start;
     gap: var(--gap-smi);
-    cursor: pointer;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
   }
-  .iconMaior2 {
+  .iconmaior2 {
     position: absolute;
-    margin: 0;
+    margin: 0 !important;
     top: 4.5px;
     left: 190.5px;
     width: 9.09px;
@@ -139,16 +123,15 @@
   }
   .botaousuario {
     position: absolute;
-    top: 233px;
+    top: 230px;
     left: 32px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
     gap: var(--gap-smi);
-    cursor: pointer;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
   }
   .menulateral {
     position: absolute;
@@ -157,11 +140,19 @@
     width: 257px;
     height: 1024px;
     text-align: left;
-     font-size: var(--font-size-base);
+    font-size: var(--font-size-base);
     color: var(--color-white);
     font-family: var(--font-poppins);
   }
   
-  .link {
-    text-decoration: none !important; /* Remove o sublinhado do link */
+.botaomeuscursos{
+  position: absolute;
+    top: 280px;
+    left: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-smi);
+
 }
