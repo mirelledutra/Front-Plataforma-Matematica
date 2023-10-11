@@ -33,7 +33,7 @@ export default function Menu() {
                         </li>
 
                         <li>
-                            <a className={styles.link} href="Perfil">
+                            <a className={styles.link} href="perfil">
                                 <LuUsers className={styles.imagem} />
                                 <span className={styles.texto}>Perfil</span>
                             </a>
@@ -47,13 +47,13 @@ export default function Menu() {
                         </li>
 
                         <li>
-                            <a className={styles.link} href="Cursos">
+                            <a className={styles.link} href="curso">
                                 <PiBookBookmarkLight className={styles.imagem} />
                                 <span className={styles.texto}>Cursos</span>
                             </a>
                         </li>
                         <li >
-                            <a className={styles.link} href="sair">
+                            <a className={styles.link} href="/">
                                 <BiExit className={styles.imagem} />
                                 <span className={styles.textoFn}>Sair</span>
                             </a>

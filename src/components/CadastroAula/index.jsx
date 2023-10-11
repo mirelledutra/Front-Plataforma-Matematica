@@ -37,7 +37,7 @@ export default function Cabecalho() {
             </div>
           </div>
           <div className={styles.perfil}>
-            <Link href="/Perfil">
+            <Link href="/perfil">
               <img className={styles.imagem} src="Group 276.svg" alt="" />
             </Link>
           </div>
