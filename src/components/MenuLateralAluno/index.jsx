@@ -5,16 +5,18 @@ export default function MenuLateralAluno()  {
   return (
     <div className={styles.menulateral}>
       <div className={styles.menulateralChild} />
+      <a href= "/">
       <img className={styles.logoIcon} alt="" src="/logo.png" />
-      <div className={styles.botaosair}>
+      </a>
+      <a href="/" className={styles.botaosair}>
         <div className={styles.sair}>Sair</div>
         <img className={styles.iconSair} alt="" src="/iconSair.png" />
-      </div>
-      <div className={styles.botaocurso}>
+      </a>
+      <a href="/curso" className={styles.botaocurso}>
         <img className={styles.bookIcon} alt="" src="/iconBook.png" />
         <div className={styles.curso}>Cursos</div>
         <img className={styles.iconMaior} alt="" src="/iconMaior.png" />
-      </div>
+      </a>
       <a href="/inicio" className={styles.botaoinicio}>
          <img className={styles.inicioIcon} alt="" src="/iconHome.png" />
          <div className={styles.inicio}>Início</div>
@@ -26,11 +28,11 @@ export default function MenuLateralAluno()  {
         <div className={styles.user}>Perfil</div>
         <img className={styles.iconMaior2} alt="" src="/iconMaior.png" />
       </a>
-      <div className={styles.botaomeuscursos}>
+      <a href="/meuscursos" className={styles.botaomeuscursos}>
         <img className={styles.iconMc} alt="" src="/mc.png" />
         <div className={styles.user}>Meus Cursos</div>
         <img className={styles.iconMaior2} alt="" src="/iconMaior.png" />
-      </div>
+      </a>
 
 
 
