@@ -1,5 +1,6 @@
 //componente desenvolvido por Mirelle
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import styles from "./styles.module.css"
 
 export default function GridCurso (){
@@ -21,8 +22,8 @@ export default function GridCurso (){
     useEffect(()=>{
  
      }, []);
-/*{
-      axios.get('http://localhost:3002/curso')
+
+     /* axios.get('http://localhost:3002/curso')
         .then(resultado => {
             console.log(resultado)
             setCurso(resultado.data.docs)

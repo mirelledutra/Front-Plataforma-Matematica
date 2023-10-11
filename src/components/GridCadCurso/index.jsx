@@ -22,12 +22,7 @@ export default function GridCadCurso(){
     ];
 
     useEffect(()=>{
-       // const fetchData = async()=>{
-            //const response = await fetch("sua api aqui");
-           // const result = await response.json();
-            //setData(result);
-     //   };
-        //fetchData();
+   
     }, []);
 
     return (

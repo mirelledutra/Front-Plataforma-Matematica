@@ -1,5 +1,5 @@
-import axios from "axios";
 import { useState } from "react";
+import axios from "axios";
 import styles from "./styles.module.css"
 export default function CadastroCurso() {
     const [curso, setCurso] = useState({
@@ -12,7 +12,7 @@ export default function CadastroCurso() {
       e.preventDefault();
       console.log(curso);
       
-        axios.post("http://localhost:3020/cursos", curso)
+       /* axios.post("http://localhost:3020/cursos", curso)
         .then((resultado) => {
           console.log(resultado);
           
@@ -21,6 +21,7 @@ export default function CadastroCurso() {
           console.log(erro);
           
         });
+        */
     }
   
     return (

@@ -15,7 +15,7 @@ export default function BotoesCadListCurso(){
             Cadastrar Disciplina
         </button>
         </Link>
-        <Link href="/cadastrarAula">
+        <Link href="/CadastrarAula">
         <button className={styles.cadastrarAulaButton}>
             <img className={styles.buttonIcon2} src="/add.png" alt="" />
             Cadastrar Aula

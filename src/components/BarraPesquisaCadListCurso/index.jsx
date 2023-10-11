@@ -14,7 +14,7 @@ export default function BarraPesquisaCadListCurso(){
         <div className={styles.title}>Cursos</div>
         <div>
             <div className={styles.barraperfil}/>
-            <Link href= "/perfiluser">
+            <Link href= "/perfil">
             <img className={styles.perfilIcon} alt="" src="/fotoPerfil.png" />
             </Link>
         </div>

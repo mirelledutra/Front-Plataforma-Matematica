@@ -17,7 +17,7 @@ export default function BarraPesquisa(){
         
         <div>
             <div className={styles.barraperfil}/>
-            <Link href= "/perfiluser">
+            <Link href = "/perfil">
             <img className={styles.perfilIcon} alt="" src="/fotoPerfil.png" />
             </Link>
         </div>

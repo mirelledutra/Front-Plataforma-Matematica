@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import axios from "axios"
 import styles from "./styles.module.css"
 import { useState } from "react";
 
@@ -24,12 +25,7 @@ export default function GridCadDisciplina(){
     ];
 
     useEffect(()=>{
-       // const fetchData = async()=>{
-            //const response = await fetch("sua api aqui");
-           // const result = await response.json();
-            //setData(result);
-     //   };
-        //fetchData();
+
     }, []);
 
     return (
