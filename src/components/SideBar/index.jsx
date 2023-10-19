@@ -53,7 +53,7 @@ export default function Menu() {
                             </a>
                         </li>
                         <li >
-                            <a className={styles.link} href="sair">
+                            <a className={styles.link} href="/">
                                 <BiExit className={styles.imagem} />
                                 <span className={styles.textoFn}>Sair</span>
                             </a>

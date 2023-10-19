@@ -8,7 +8,7 @@ export default function PageSaibaMais() {
                 <header>
                     <Link href="/">
                     <img className={styles.imagem} src="logo-branca-4m.svg" alt="Logo Branca 4m" />
-                    <hr />
+                    <hr className={styles.hr}/>
                     </Link>
                 </header>
             </div>

@@ -59,6 +59,8 @@
   padding: var(--padding-mini) var(--padding-60xl);
   box-sizing: border-box;
   gap: var(--gap-3xs);
+  text-decoration: none;
+  color: white;
 }
 .bookimgIcon {
   position: relative;
@@ -90,6 +92,8 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xs);
+  text-decoration: none;
+  color: white;
 }
 .iconmaior1 {
   position: absolute;
@@ -154,5 +158,6 @@ position: absolute;
   align-items: flex-end;
   justify-content: flex-start;
   gap: var(--gap-smi);
-
+  text-decoration: none;
+  color: white;
 }
