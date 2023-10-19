@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 export default function GridCadCurso(){
     const [iconVisible, setIconVisible]=useState(false);
  //   const [curso, setCurso] = useState([]);
