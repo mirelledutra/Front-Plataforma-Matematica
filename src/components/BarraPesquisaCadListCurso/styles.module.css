@@ -1,106 +1,73 @@
 .title{
-  margin-top: 30px;
-  margin-left: 300px;
+  
+  position: relative;
+ top: 40px;
+   margin-left: 20px;
   font-size: 30px;
   font-family: var(Poppins),sans-serif;
   font-style: SemiBold;
   color: #225943;
 }
 .labelContainer{
-    position: relative;
-    width: 682px;
-    height: 41px;
-  
-  }
-  
+ 
+    position:relative;
 
-
-  .label{
-    position: absolute;
-    top: 50px;
-    /* nao estou conseguindo colocar o texto pesquisa dentro da label
-    */
-    left: 10px;
-    transform: translateY(-50%);
-    font-size: 14px;
-    width: 1180px;
-    height: 66px;
-    
-    
-  
-  }
-  .label{
-    text-align: left;
-    font-size: var(--font-size-lg);
-    color: var(--color-dimgray);
-    font-family: var(--font-roboto);
-    border: none;
   
   }
   
-   
   .input {
-    position: absolute;
-    align-items: 10px;
+    position: relative;
+
+    left: 400px;
     background-color: #DEDEDE;
     border: 1px solid #DEDEDE;
     border-radius: 20px;
-    max-width: 600px;
-    margin-top: 56px;
-    left: 685px;
-    width: 682px;
-    height: 41px;
+    max-width: 800px;
+    min-width: 800px;
+    height: 40px;
   
     }
-    .input.placeholder{
-      width: 100%;
-      height: 100%;
-      padding-left: 41px;
-    }
-  
+ 
     
   .lupaimgIcon {
     position: absolute;
-    margin-top: 67px;
-    left: 1250px;
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
+    margin: 40px;
+    left: 1110px;
     cursor: pointer;
     
   }
     
   .barra {
-    position: absolute;
-    margin-top: 122px;
-    margin-left: 253px;
-    left: 3px;
+    position:relative;
+
+    margin: 1px;
     border-top: 1px solid var(--color-darkgray);
     box-sizing: border-box;
     width: 1510px;
-    height: 1px;
+ 
     }
     .barraperfil{
-      position: absolute;
-      margin-right: 100px;
-      width: 36px;
-      height: 1px;
-      right: 124px;
-      padding: 2px;
-      box-sizing: border-box;
+      display: flex;
+      left: 1400px;
+      position: relative;
+      width: 0px;
+      height: 40px;
+      border: 1px solid var(--color-darkgray);
+
     }
   
     .perfilIcon {
-      position: absolute;
-      height: 36px;
-      width: 36px;
-      top: 63px;
-      right: 57px;
-      bottom: 90.33%;
-      left: 1700px;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
+      left: 650px;
+
+
+      position: relative;
+
+
+         
+  
+
+      
+   
     }
     
   
