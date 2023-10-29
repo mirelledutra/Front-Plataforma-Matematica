@@ -6,8 +6,8 @@
     justify-content:space-between;
     height: 50px;
     background-color: #08624c;
-    margin-left: 300px;
-    margin-right: 140px;
+    margin-left: 30px;
+    margin-right: 80px;
     padding: 0 10 px;
   
 
@@ -22,7 +22,7 @@
     font-size: 16px;
     font-weight: bold;
     color: #ffff;
-    padding: 1px 10px;
+    padding: 20px 20px;
     border-radius: 5px;
 
 }
@@ -30,7 +30,7 @@
 .gridCell {
     flex: 1;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
   
 .headerCell {

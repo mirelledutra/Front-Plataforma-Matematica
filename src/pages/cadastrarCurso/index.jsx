@@ -5,7 +5,6 @@ import GridCadCurso from "@/components/GridCadCurso";
 import MenuLateral from "@/components/MenuLateral";
 import axios from "axios";
 
-
 export default function CadastrarCurso(){
   return(
     <>

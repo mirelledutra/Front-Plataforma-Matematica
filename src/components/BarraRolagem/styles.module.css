@@ -1,13 +1,13 @@
    .barrarolagem {
-    position: fixed;
+    position: absolute;
     top: 280px;
-    left: 1750px;
+    left: 1450px;
     background-color: #25d691;
     width: 8px;
     height: 606px;
     max-height: 606px;
     transition: heigt 0.3s ease;
-    z-index: 999;
+
     flex-direction: column;
   }
   .barrarolagemChild {

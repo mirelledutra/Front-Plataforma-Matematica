@@ -3,34 +3,40 @@ import Link from 'next/link';
 import React from 'react';
 
 import BarraRolagem from '@/components/BarraRolagem';
-import MenuLateral from '@/components/MenuLateral';
 import BotoesCadListCurso from '@/components/Botoes';
 import BarraPesquisaCadListCurso from '@/components/BarraPesquisaCadListCurso';
 import FormularioFiltrarCurso from '@/components/FormularioFiltrarCurso';
 import GridCurso from '@/components/GridCurso';
+import Menu from '@/components/SideBar/index';
+import styles from "./styles.module.css"
 
 
 
-
-export default function CadastrarListarCurso(){
+export default function CadastrarListarCurso() {
 
 
 
 
   return (
-    
-  <>
-      <BarraPesquisaCadListCurso />
-      <BarraRolagem />
-      <MenuLateral />
-      <BotoesCadListCurso/>
-      <FormularioFiltrarCurso />
-      <GridCurso />
 
-  </>  
+    <>
+    <div className={styles.container}>
+      <Menu />  
+      
+     
+      <div className={styles.t}>
+      <BarraPesquisaCadListCurso />
+     
+      <BotoesCadListCurso />
+      <FormularioFiltrarCurso />
+    
+      <GridCurso />
+      <BarraRolagem />
+      </div>
+      
+    </div>
+    
+
+    </>
   );
 };
-<<<<<<< HEAD
-
-=======
->>>>>>> 77f473cb46780132dba3df6488fb9e2b0ed47cfe
