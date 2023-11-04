@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; 
+    background-color: #D9D9D9;
+   
+
+}
+
+.label{
+    padding-left: 10px;
+    padding-top: 30px;
+    display: flex;
+    
+        
+}
+.input{
+    padding-left: 10px;
+    padding-top: 30px;
+    display: flex;
+    
+        
+}
+.button{
+    display: flex;
+    justify-content: center;
+    background-color: #096E46;
+    border: 1px solid #096E46;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    width: 450px;
+    height: 40px;
+    margin:10px;
+    font-size: 13px;
+}

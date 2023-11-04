@@ -1,6 +1,7 @@
 //criado por Mirelle Dutra
 import styles from "../BarraPesquisa/styles.module.css";
 import Link from "next/link";
+
 export default function BarraPesquisa(){
 
 

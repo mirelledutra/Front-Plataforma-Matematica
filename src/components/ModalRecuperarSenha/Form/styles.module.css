@@ -1,0 +1,25 @@
+
+.container {
+    width: 470px;
+    height: 288px;
+    border-radius: 5px;
+    display: content;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #096E46;
+    background-color: #FFFFFF;
+    
+}
+.h1{
+    margin: 10px;
+    font-size: 24px;
+
+}
+.h2 {
+    font-size: 12px;
+    padding-top: 0px;
+    color: #484848;
+    margin: 10px;
+    
+}
