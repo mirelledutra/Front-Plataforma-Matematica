@@ -4,6 +4,9 @@ import { AppProps } from 'next/app';
 import '../styles/global.css'; 
 
 
+//npm install react-bootstrap bootstrap --sava
+//npm install emailjs-com --save
+
 import SideBar from '@/components/SideBar';
 import styles from '../styles/app.module.css';
 function MyApp(props) {
@@ -20,7 +23,7 @@ function MyApp(props) {
       </Head>
       {/* Inclua qualquer componente de layout aqui, como um cabeçalho ou menu */}
       <Component {...pageProps} />
-    
+
     </React.Fragment>
   );
 }

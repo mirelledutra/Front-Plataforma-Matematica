@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import BarraPesquisa from '../../components/BarraPesquisa';
 import BarraRolagem from '../../components/BarraRolagem';
 import MenuLateral from '../../components/MenuLateralAluno';
 import styles from './styles.module.css';
+import useSWR from 'swr';
+import useAuth from '@/auth/useAuth';
+import { CookieHandler } from '@/util/cookie';
 
 export default function Perfil ()  {
   const [nome, setNome] = useState('');
@@ -13,6 +16,7 @@ export default function Perfil ()  {
   const [confirmarSenha, setConfirmarSenha] = useState('');
   const [telefone, setTelefone] = useState('');
   const [foto, setFoto] = useState(null);
+
   
   
   const handleNomeChange = (event) => {
@@ -61,6 +65,14 @@ export default function Perfil ()  {
 
     console.log('Dados a serem salvos:', dados);
   };
+
+  useEffect(() => {
+    const user = JSON.parse(CookieHandler.getCookie("User"))
+    setNome(user.nome)
+    setEmail(user.email)
+    setTelefone(user.telefone)
+    setSenha(user.senha)
+  },[])
   
 
   return (
