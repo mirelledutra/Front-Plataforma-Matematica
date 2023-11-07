@@ -3,7 +3,7 @@ import BarraPesquisa from '../../components/BarraPesquisa';
 import BarraRolagem from '../../components/BarraRolagem';
 import MenuLateral from '../../components/MenuLateralAluno';
 import styles from './styles.module.css';
-import useSWR from 'swr';
+
 import useAuth from '@/auth/useAuth';
 import { CookieHandler } from '@/util/cookie';
 
