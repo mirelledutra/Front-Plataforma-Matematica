@@ -4,29 +4,8 @@ import styles from "./styles.module.css"
 import { useState } from "react";
 
 
-export default function GridCadDisciplina(){
+export default function GridCadDisciplina(data){
    const [iconVisible, setIconVisible] = useState(false);
-  // const [disciplina, setDisciplina] = useState([]);
-    useEffect(()=>{
-     //   axios.get('http://localhost:3002/disciplina')
-       // .then(resultado => {
-       //     console.log(resultado)
-         //   setDisciplina(resultado.data.docs)
-         //   })
-          //  .catch(e=> console.log(e));
-        }, []);
-    const data =[
-        {  disciplina: "Geometria Plana", status: "Ativo"},
-        {  disciplina: "Estatística",status: "Ativo"},
-        {  disciplina: "Gráficos", status: "Ativo"},
-        {  disciplina: "Função Afim", status: "Ativo"},
-        
-       
-    ];
-
-    useEffect(()=>{
-
-    }, []);
 
     return (
         <>

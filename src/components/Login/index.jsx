@@ -40,13 +40,13 @@ export default function CompLogin() {
                     <img src='logo.png' alt="Logo" />
                 </div>
                 <div className={styles.inputGroup}>
-                    <label className={styles.label} htmlFor="nome">Usuário:</label>
-                    <input value={user} onChange={e => setUser(e.target.value)} required className={styles.input} type="text" id="nome" />
+                    <label className={styles.label} htmlFor="nome">E-mail:</label>
+                    <input value={user} onChange={e => setUser(e.target.value)} required className={styles.input} type="email" id="nome" />
                 </div>
 
                 <div className={styles.inputGroup}>
                     <label className={styles.label} htmlFor="senha">Senha:</label>
-                    <input value={senha} onChange={e => setSenha(e.target.value)} required className={styles.input} type="password" id="senha" />
+                    <input minLength={8} value={senha} onChange={e => setSenha(e.target.value)} required className={styles.input} type="password" id="senha" />
                 </div>
 
                 <div className={styles.recovery}>
