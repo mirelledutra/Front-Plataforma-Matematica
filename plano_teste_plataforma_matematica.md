@@ -16,10 +16,9 @@
 O Projeto Plataforma de Matemática é uma aplicação web educacional que tem como objetivo oferecer funcionalidades de cadastro, login, acesso a cursos, visualização de vídeos, upload e visualização de exercícios em PDF, bem como recursos de administração para inserção de conteúdo, gerenciamento de cursos, disciplinas, aulas e usuários. Este plano de teste detalha a estratégia para garantir que a plataforma atenda às expectativas dos usuários e funcione de acordo com os requisitos definidos.
 
 
-
 ## 2 - Arquitetura
-A plataforma foi desenvolvida utilizando JavaScript como linguagem de programção no lado do servidor (Node.js) e no lado do cliente, framework (React com Next.js). Para o armazenamento dos dados, foi utilizado o banco de dados MongoDB Atlas e a comunicação entre front-end e back-end é feita por meio de uma API RESTful. Funciona como uma imagem, em que o cliente (aplicação) envia uma requisição a uma URL(endpoint) para acessar os serviços da API, e tem como retornar um objeto na forma de um JSON.
 
+A plataforma foi desenvolvida utilizando JavaScript como linguagem de programção no lado do servidor (Node.js) e no lado do cliente, framework (React com Next.js). Para o armazenamento dos dados, foi utilizado o banco de dados MongoDB Atlas e a comunicação entre front-end e back-end é feita por meio de uma API RESTful. Funciona como uma imagem, em que o cliente (aplicação) envia uma requisição a uma URL(endpoint) para acessar os serviços da API, e tem como retornar um objeto na forma de um JSON.
 
 
 ## 3 - Categorização  dos  Requisitos  em  Funcionais  x  Não Funcionais
@@ -44,12 +43,15 @@ RF011 – O sistema deve permitir fazer upload do conteúdo.  |   |
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
 <strong>Cadastro de Usuário</strong>| ● O usuário é cadastrado com sucesso e redirecionado para uma página de login.|<br>● O e-mail terá que ser um e-mail válido.<br>● Exibir uma mensagem de confirmação em caso positivo.<br>● Exibir mensagem de falha em caso do e-mail ou senha estejam incorretos.<br>● Exibir mensagem de falha no caso de campo obrigatório incompleto<br>● Senha min 8 caracteres.|<br> ● Ter acessibilidade no sistema <br>● Redimensionar a Tela
+
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
 <strong>Login de Usuário</strong>| ● Usuário é autenticado e redirecionado para a página inicial.|<br>● Login no Sistema com sucesso. <br>● Usuario Inválido.|<br>● Ter acessibilidade no sistema<br>● Redimensionar a Tela
+
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
 <strong>Acesso Usuário</strong>| ● Um novo usuário é cadastrado corretamente.|<br>● Exibe mensagem de confirmação em caso positivo.<br>● Exibe mensagem de falha em caso o usuário já esteja cadastrado.|● Ter acessibilidade no sistema.
+
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
 <strong>Acesso a Curso</strong>| ● O administrador clica no botão cadastrar curso e redirecionado a página de cadastro de curso.<br>● O administrador clica no botão cadastrar disciplina e redirecionado a página de cadastro de disciplina.<br>● O administrador clica no botão cadastrar aula e redirecionado a página de cadastro de aula.|<br>● Exibir mensagem de confirmação em caso positivo.<br>● Exibir mensagem de falha caso a disciplina esteja cadastrada|● Redimensionar a Tela
@@ -87,8 +89,6 @@ Testes Automatizados: Serão realizados testes end-to-end na funcionalidade de L
 Testes Manuais: Todas as funcionalidades serão testadas manualmente pelo time de qualidade seguindo a documentação de Cenários de teste e destes TestPlan. 
 Versão Beta: Será lançada uma versão beta para 20 usuários pré-cadastrados antes do release. 
 
-
-
 ●	Ambiente e Ferramentas
 
 Os testes serão feitos do ambiente de homologação, e contém as mesmas configurações do ambiente de produção com uma massa de dados gerada previamente pelo time de qualidade.
@@ -112,6 +112,7 @@ ID 	|Nivel de Severidade |	Descrição
 2	|Cova |	● Funcionalidade não funciona como o esperado <br> ● Entrada incomum causa efeitos irreversíveis
 3	|Moderada |	● A funcionalidade não atinge certos critérios de alcance, mas sua funcionalidade em geral não é afetada <br> ● Mensagem de erro ou sucesso não é exibida
 4	|Pequena |	● Quase nenhum impacto na funcionalidade, porém atrapalhando a experiência <br> ● Erro ortográfico <br> ● Pequenos erros de UI
+
 
 ## 6 - Definição de Pronto
 
