@@ -44,10 +44,10 @@ Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Ace
 -----------|--------|--------|--------| 
 <strong>Cadastro de Usuário</strong>| ● O usuário é cadastrado com sucesso e redirecionado para uma página de login.|<br>● O e-mail terá que ser um e-mail válido.<br>● Exibir uma mensagem de confirmação em caso positivo.<br>● Exibir mensagem de falha em caso do e-mail ou senha estejam incorretos.<br>● Exibir mensagem de falha no caso de campo obrigatório incompleto<br>● Senha min 8 caracteres.|<br> ● Ter acessibilidade no sistema <br>● Redimensionar a Tela
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
-<strong>Login de Usuário</strong> | ● Usuário é autenticado e redirecionado para a página inicial.|<br>● Login no Sistema com sucesso. <br>● Usuario Inválido.|<br>● Ter acessibilidade no sistema<br>● Redimensionar a Tela
 
+<strong>Login de Usuário</strong> | ● Usuário é autenticado e redirecionado para a página inicial.|<br>● Login no Sistema com sucesso. <br>● Usuario Inválido.|<br>● Ter acessibilidade no sistema<br>● Redimensionar a Tela
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
------------|--------|--------|--------| 
+
 <strong>Acesso Usuário</strong>| ● Um novo usuário é cadastrado corretamente.|<br>● Exibe mensagem de confirmação em caso positivo.<br>● Exibe mensagem de falha em caso o usuário já esteja cadastrado.|● Ter acessibilidade no sistema.
 
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
