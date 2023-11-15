@@ -58,12 +58,10 @@ Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Ace
 Cadastro de Disciplina | ● A disciplina é cadastrada com sucesso. | ● Exibir mensagem de confirmação em caso positivo. <br> ● Exibir mensagem de falha caso a disciplina esteja cadastrada |
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
-Cadastro de Curso   | ● O curso é cadastrado com sucesso. |● Exibir mensagem de confirmação em caso positivo.
- <br>● Exibir mensagem de falha caso a curso esteja cadastrada |
+Cadastro de Curso   | ● O curso é cadastrado com sucesso. | ● Exibir mensagem de confirmação em caso positivo. <br> ● Exibir mensagem de falha caso a curso esteja cadastrada |
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
-Cadastro de Aula    | ● A aula é cadastrada com sucesso.| ● Exibir mensagem de confirmação em caso positivo.
-<br>● Exibir mensagem de falha caso a curso esteja cadastrada |
+Cadastro de Aula    | ● A aula é cadastrada com sucesso.| ● Exibir mensagem de confirmação em caso positivo. <br> ● Exibir mensagem de falha caso a curso esteja cadastrada |
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
 Acesso a Cursos     | ● O usuário será redirecionado para a disciplina e suas respectivas aulas <br> ● O usuário ao clicar em iniciar curso será redirecionado a visualizar a aula <br>● A aula é reproduzida corretamente.| ● Exibir mensagem de falha caso não tenha aula cadastrada.|
