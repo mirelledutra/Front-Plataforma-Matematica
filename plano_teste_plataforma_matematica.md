@@ -1,4 +1,3 @@
-
 # Plano de Teste
 
 **Plataforma de matemática*
@@ -45,31 +44,21 @@ RF011 – O sistema deve permitir fazer upload do conteúdo.  |   |
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
 Cadastro de Usuário | ● O usuário é cadastrado com sucesso e redirecionado para uma página de login. | ● O e-mail terá que ser um e-mail válido.<br>● Exibir uma mensagem de confirmação em caso positivo.<br>● Exibir mensagem de falha em caso do e-mail ou senha estejam incorretos.<br>● Exibir mensagem de falha no caso de campo obrigatório incompleto<br>● Senha min 8 caracteres  | ● Ter acessibilidade no sistema <br>● Redimensionar a Tela
-
-
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
-Login de Usuário | ● Usuário é autenticado e redirecionado para a página inicial. |● Login no Sistema com sucesso <br>● Usuario Inválido  |● Ter acessibilidade no sistema  <br>● Redimensionar a Tela
-
-
+Login de Usuário    | ● Usuário é autenticado e redirecionado para a página inicial. | ● Login no Sistema com sucesso. <br>● Usuario Inválido  | ● Ter acessibilidade no sistema <br>● Redimensionar a Tela
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
-Acesso Usuário | ● Um novo usuário é cadastrado corretamente. |● Exibe mensagem de confirmação em caso positivo. <br>● Exibe mensagem de falha em caso o usuário já esteja cadastrado.| ● Ter acessibilidade no sistema.
-
-
+Acesso Usuário      | ● Um novo usuário é cadastrado corretamente. |● Exibe mensagem de confirmação em caso positivo. <br>● Exibe mensagem de falha em caso o usuário já esteja cadastrado.| ● Ter acessibilidade no sistema.
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
-Acesso a Curso  | ● O administrador clica no botão cadastrar curso e redirecionado a página de cadastro de curso.<br>● O administrador clica no botão cadastrar disciplina e redirecionado a página de cadastro de disciplina.<br>● O administrador clica no botão cadastrar aula e redirecionado a página de cadastro de aula.| ● Exibir mensagem de confirmação em caso positivo.<br> ● Exibir mensagem de falha caso a disciplina esteja cadastrada | ● Redimensionar a Tela
-
-
+Acesso a Curso      | ● O administrador clica no botão cadastrar curso e redirecionado a página de cadastro de curso.<br>● O administrador clica no botão cadastrar disciplina e redirecionado a página de cadastro de disciplina.<br>● O administrador clica no botão cadastrar aula e redirecionado a página de cadastro de aula.| ● Exibir mensagem de confirmação em caso positivo.<br> ● Exibir mensagem de falha caso a disciplina esteja cadastrada | ● Redimensionar a Tela
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
 Cadastro de Disciplina | ● A disciplina é cadastrada com sucesso. | ● Exibir mensagem de confirmação em caso positivo. <br> ● Exibir mensagem de falha caso a disciplina esteja cadastrada |
-
-
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
-Cadastro de Curso | ● O curso é cadastrado com sucesso. |● Exibir mensagem de confirmação em caso positivo.
+Cadastro de Curso   | ● O curso é cadastrado com sucesso. |● Exibir mensagem de confirmação em caso positivo.
  <br>● Exibir mensagem de falha caso a curso esteja cadastrada |
 
 
