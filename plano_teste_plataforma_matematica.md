@@ -18,7 +18,7 @@ O Projeto Plataforma de Matemática é uma aplicação web educacional que tem c
 
 ## 2 - Arquitetura
 
-A plataforma foi desenvolvida utilizando JavaScript como linguagem de programção no lado do servidor (Node.js) e no lado do cliente, framework (React com Next.js). Para o armazenamento dos dados, foi utilizado o banco de dados MongoDB Atlas e a comunicação entre front-end e back-end é feita por meio de uma API RESTful. Funciona como uma imagem, em que o cliente (aplicação) envia uma requisição a uma URL(endpoint) para acessar os serviços da API, e tem como retornar um objeto na forma de um JSON.
+A plataforma foi desenvolvida utilizando JavaScript como linguagem de programação no lado do servidor (Node.js) e no lado do cliente, framework (React com Next.js). Para o armazenamento dos dados, foi utilizado o banco de dados MongoDB Atlas e a comunicação entre front-end e back-end é feita por meio de uma API RESTful. Funciona como uma imagem, em que o cliente (aplicação) envia uma requisição a uma URL(endpoint) para acessar os serviços da API, e tem como retornar um objeto na forma de um JSON.
 
 
 ## 3 - Categorização  dos  Requisitos  em  Funcionais  x  Não Funcionais
@@ -31,7 +31,7 @@ RF003 – O sistema deve permitir o cadastro de disciplina |  NF003 – O banco 
 RF004 – O sistema deve permitir o cadastro de curso  | NF004 – O sistema deve possuir um Design para mobile responsivo.  |
 RF005 – O sistema deve permitir o cadastro de aula    | NF005 – O sistema deve ser acessível via Browser, como Google Chrome, Internet Explorer e Mozilla Firefox.   |
 RF006 – O sistema deve permitir o acesso a cursos |   |
-RF007 – O sistema deve permitir o acesso as aulas  |   |
+RF007 – O sistema deve permitir o acesso às aulas  |   |
 RF008 – O sistema deve permitir a matrícula de um curso  |   |
 RF009 – O sistema deve permitir visualizar vídeos de uma aula |   |
 RF010 – O sistema deve permitir a inserir conteúdo pdf |   |
