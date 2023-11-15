@@ -46,7 +46,7 @@ Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Ace
 
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
-<strong>Login de Usuário</strong>| ● Usuário é autenticado e redirecionado para a página inicial.|<br>● Login no Sistema com sucesso. <br>● Usuario Inválido.|<br>● Ter acessibilidade no sistema<br>● Redimensionar a Tela
+<strong>Login de Usuário</strong> | ● Usuário é autenticado e redirecionado para a página inicial.|<br>● Login no Sistema com sucesso. <br>● Usuario Inválido.|<br>● Ter acessibilidade no sistema<br>● Redimensionar a Tela
 
 Funcionalidades   | Comportamento Esperado | Verificações |  Critérios de Aceite  |
 -----------|--------|--------|--------| 
