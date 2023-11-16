@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from "axios";
 
 import style from '@/pages/recuperarsenha/recuperarsenha.module.css';
 
@@ -10,6 +11,19 @@ import Button from '@/components/ModalRecuperarSenha/Button';
 export default function Home() {
   const [email, setEmail] = useState('');
   const router = useRouter();
+
+  const handleEnviarEmail =  async() => {
+    try{
+      await axios.post('http://localhost:3001/password/reset-request', {email});
+    
+      setEmail('');
+      window.alert('E-mail enviado com sucesso!')
+    }catch (error){
+      console.error(error);
+      window.alert('Erro ao enviar o e-mail de recuperação de senha.');
+    }
+   
+  };
 
   return (
     <>
@@ -29,15 +43,7 @@ export default function Home() {
          
           
            
-            <Button 
-              onClick={() => {      
-                setEmail('');
-                window.alert('E-mail enviado com sucesso!');
-              }}
-            >
-              Enviar E-mail
-            </Button>
-
+            <Button onClick={handleEnviarEmail}>Enviar E-mail </Button>   
             <button className={style.button}
             onClick={() => {
               router.push('/Login');
