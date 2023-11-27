@@ -1,16 +1,13 @@
 .gridRow {
-    margin: 30px;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:space-between;
-    height: 50px;
+    height: 40px;
     background-color: #08624c;
-    margin-left: 30px;
-    margin-right: 80px;
-    padding: 0 10 px;
-  
-
+    margin-left: 60px;
+    width: 1040px;
 
 
 }
@@ -19,11 +16,13 @@
     flex-direction:row;
     justify-content:space-between;
     font-family: 'inter', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #ffff;
     padding: 20px 20px;
     border-radius: 5px;
+ 
+ 
 
 }
   
@@ -31,7 +30,11 @@
     flex: 1;
     text-align: center;
     padding: 20px;
+  
+
+
 }
+
   
 .headerCell {
     font-weight: bold;
@@ -39,16 +42,20 @@
   
 .evenRow {
     background-color: #deeae5;
+    width: 1080px;
+
 }
   
 .oddRow {
     background-color: #ffffff;
+    width: 1080px;
 }
 
 .iconContainer {
     display: flex;
     justify-content:space-evenly;
-    align-items: center;
+    margin-left: 50px;
+   
 }
 
 .iconEye {

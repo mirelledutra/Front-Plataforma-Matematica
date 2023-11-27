@@ -1,11 +1,15 @@
 import Link from 'next/link'
-import styles from './styles.module.css'
+import styles from "./styles.module.css"
 import React, { useState } from 'react';
-import SideBar from "@/components/SideBar";
+
 import { BsSearch } from "react-icons/bs";
 import { GoFileMedia } from "react-icons/go";
+import Menu from '@/components/SideBar';
+import {FileReader} from "react";
 
-export default function Cabecalho() {
+export default function CadastroAula (){
+
+
 
   const HandleAlt = (event) => {
     const file = event.target.files[0];
@@ -21,28 +25,10 @@ export default function Cabecalho() {
   const [link_arquivo, setLinkArquivo] = useState('');
 
   return (
-    <div className={styles.pgn}>
-      <div className={styles.menulateral}>
-        <SideBar />
-      </div>
-      <div className={styles.pagina}>
-        <div className={styles.header}>
-          <div className={styles.titulo}>
-            <a className={styles.nomePgn}>Cadastrar Aulas</a>
-          </div>
-          <div className={styles.brpesquise}>
-            <div className={styles.barra}>
-              <input className={styles.input} type="text" placeholder="Pesquisar..." />
-              <BsSearch className={styles.icon} />
-            </div>
-          </div>
-          <div className={styles.perfil}>
-            <Link href="/perfil">
-              <img className={styles.imagem} src="Group 276.svg" alt="" />
-            </Link>
-          </div>
+    <div className={styles.png}>
 
-        </div>
+      <div className={styles.pagina}>
+
 
         <div className={styles.conteudo}>
           <div className={styles.central}>
@@ -51,27 +37,24 @@ export default function Cabecalho() {
               <form className={styles.context}>
                 <label className={styles.label}>Escolha o Curso </label>
                 <select className={styles.select}>
-                <option value="opcao1">1°ano</option>
-                  <option value="opcao2">2°ano</option>
-                  <option value="opcao3">3°ano</option>
-                  <option value="opcao4">Superior
-                  </option>
+                <option value="opcao1">Geometria Plana</option>
+                  <option value="opcao2">Trigonometria</option>
+                  <option value="opcao3">Equação do 1º Grau</option>
+                  <option value="opcao4">Matemática Básica</option>
                 </select>
               </form>
               <form className={styles.context}>
-                <label className={styles.label1}>Selecione o Nivel </label>
+                <label className={styles.label1}>Selecione o Tipo </label>
                 <select className={styles.select1}>
                 <option value="opcao1">Ensino Médio</option>
                   <option value="opcao2">Ensino Superior</option>
                 </select>
               </form>
               <form className={styles.context}>
-                <label className={styles.label}>Digite a Disciplina</label>
+                <label className={styles.label}>Área Educação</label>
                 <select className={styles.select}>
-                  <option value="opcao1">Geometria Plana</option>
-                  <option value="opcao2">Matematica Basica</option>
-                  <option value="opcao3">Funções</option>
-                  <option value="opcao4">Estatistica</option>
+                  <option value="opcao1">Matemática</option>
+
                 </select>
               </form>
             </div>
@@ -84,13 +67,10 @@ export default function Cabecalho() {
               </form>
               <form className={styles.context}>
                 <label className={styles.label}>Aula </label>
-                <select className={styles.selectAula}>
-                  <option value="opcao1">Transformaçôes do Plano</option>
-                  <option value="opcao2">Funçôes Numericas</option>
-                  <option value="opcao2">Divisão</option>
-                  <option value="opcao2">Multiplicaçâo</option>
+                <input className={styles.inputAula}>
 
-                </select>
+
+                </input>
               </form>
               <form className={styles.context}>
                 <label className={styles.label}>Data </label>
@@ -103,7 +83,7 @@ export default function Cabecalho() {
               <div className={styles.context}>
                 <div className={styles.textArea}>
                   <label className={styles.label}>Descrição</label>
-                  <textarea className={styles.box} type="text" placeholder="Digite a descrição do módulo" rows={12} cols={140} ></textarea>
+                  <textarea className={styles.box} type="text" placeholder="Digite a descrição da aula" rows={12} cols={140} ></textarea>
                 </div>
               </div>
             </div>
@@ -113,7 +93,7 @@ export default function Cabecalho() {
                   <div/>
                 ) : (
                   <div className={styles.context} alt="Arquivo" >
-                    <label className={styles.label}>Imagem capa do curso</label>
+                    <label className={styles.label}>Imagem capa da Aula</label>
                     <div className={styles.tabelFile}>
                     <input
                              className={styles.file}
@@ -136,14 +116,8 @@ export default function Cabecalho() {
                   <div/>
                 ) : (
                   <div className={styles.context} alt="Arquivo" >
-                    <label className={styles.label}>Imagem capa do curso</label>
-                    <div className={styles.tabelF}>
-                    <input
-                             className={styles.file}
-                             type='text'
-                                          
-                          />
-                    </div>
+
+
                   </div>
                 )}
                 {link_arquivo ? (

@@ -1,18 +1,31 @@
 import BarraPesquisa from "@/components/BarraPesquisa";
 import BarraRolagem from "@/components/BarraRolagem";
 import CadastroCurso from "@/components/CadastroCurso";
-import GridCadCurso from "@/components/GridCadCurso";
-import MenuLateral from "@/components/MenuLateral";
+import Menu from "@/components/SideBar";
+import BarraPerfil from "@/components/BarraPerfil";
 import axios from "axios";
+import styles from "./styles.module.css"
+import GridCurso from "@/components/GridCurso";
+
 
 export default function CadastrarCurso(){
   return(
     <>
-    <MenuLateral />
+    <div className={styles.container}>
+    <Menu />
+    <div className={styles.t}>
     <BarraPesquisa />
-    <BarraRolagem />
+    <BarraPerfil />
     <CadastroCurso />
-    <GridCadCurso />
+    <GridCurso />
+
+    </div>
+    </div>
+  
+
+   
+
+ 
 
    
 

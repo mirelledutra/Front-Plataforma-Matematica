@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import styles from "./styles.module.css";
 import CardCurso from "../CardCurso";
+import BarraPesquisa from "../BarraPesquisa";
 
 export default function ListCardCursos() {
     const [curso, setCurso] = useState([]);
@@ -30,15 +31,17 @@ export default function ListCardCursos() {
     }
 
     return (
+       <>
+     
         <div className={styles.listCardCurso}>
             {curso.map(curso => (
-            
+               
                 <CardCurso 
                 
                     key={curso.id}
                     id={curso.id}
-                    nivel={curso.nivel}
-                    disciplina={curso.disciplina}
+                    tipo={curso.tipo}
+                    nomeCurso={curso.nomeCurso}
 
                     
                 />
@@ -46,5 +49,8 @@ export default function ListCardCursos() {
             ))}
             
         </div>
+
+       </>
+        
     );
 }

@@ -1,28 +1,42 @@
 //criado por Mirelle Dutra
 import styles from "../BarraPesquisa/styles.module.css";
-import Link from "next/link";
+import { useState } from "react";
 
 export default function BarraPesquisa(){
+  const[keyword, setKeyword] = useState('');
 
+  const handleSearch = ()=>{
+    console.log('Pesquisar por:', keyword);
+  };
 
     return (
       <div className={styles.barrapesquisa}>
-        <div className={styles.labelContainer}>
-          <label className={styles.label}htmlFor="buscar"></label>
-          <input className={styles.input}type="text" id="buscar" placeholder="Pesquisar"></input>
-          <img className={styles.lupaimgIcon} alt="" src="/lupaImg.png" />
-        </div>
-        
-        
-        <div className={styles.barra}/>
-        
-        <div>
-            <div className={styles.barraperfil}/>
-            <Link href = "/perfil">
-            <img className={styles.perfilIcon} alt="" src="/fotoPerfil.png" />
-            </Link>
+        <div className={styles.inputContainer}onClick={handleSearch}>
+          <div>
+            <input className={styles.input}
+            placeholder="Pesquisar"
+            type="text"
+            id="buscar"
+            style={{
+              backgroundImage: 'url("/lupaImg.png")',
+                      
+            }}    
+            value={keyword}
+            onChange={(e) => setKeyword(e.target.value)}
+            required
+            />
+          </div>
+         
+            
+            
+
+             
         </div>
       </div>
+
+
+  
+      
 
     );
   };
