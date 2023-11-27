@@ -3,42 +3,30 @@ import styles from "../../pages/Cursos/styles.module.css"
 import CardCurso from "@/components/CardCurso";
 import ListCardCursos from "@/components/ListCardCursos";
 import Menu from '@/components/SideBar/index';
-import BarraPesquisaCardCurso from "@/components/BarraPesquisaCardCurso";
+import BarraPesquisa from "@/components/BarraPesquisa";
+import BarraPerfil from "@/components/BarraPerfil";
 
 
 
-export default function TodosCursos(){
+export default function TodosCursos({area}){
     return(
         <>
    
         <div className={styles.container}>
         <Menu />
-            <div>
-         
+            <div className={styles.t}>
                     <div>
-                    <BarraPesquisaCardCurso/>
-                    <div className={styles.card}>
-                        <CardCurso />
+                    <label className={styles.titulo}>{area}Área</label>
+                        <BarraPesquisa/>
+                        <BarraPerfil/>
+                        <div className={styles.card}>
+                         <CardCurso />
                         <ListCardCursos />
+                        </div>
                     </div>
-                
-
-                    </div>
-             
-          
-              
             </div>
         </div>
-      
-      
 
-
-
-
-  
-
-        
-        
         </>
     )
 }

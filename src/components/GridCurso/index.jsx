@@ -33,12 +33,11 @@ debugger
   return (
     <>
       <div className={`${styles.gridRow} ${styles.firstRow}`}>
-        <div className={styles.gridCellLabel}>ID</div>
-        <div className={styles.gridCellLabel}>Nível</div>
-        <div className={styles.gridCellLabel}>Curso</div>
-        <div className={styles.gridCellLabel}>Disciplina</div>
-        <div className={styles.gridCellLabel}>Aula</div>
-        <div className={styles.gridCellLabel}>Ações</div>
+        <div className={styles.gridCellLabelId}>ID</div>
+        <div className={styles.gridCellLabelTipo}>Tipo</div>
+        <div className={styles.gridCellLabelCurso}>Curso</div>
+        <div className={styles.gridCellLabelArea}>Área</div>
+        <div className={styles.gridCellLabelAcoes}>Ações</div>
       </div>
 
       {docs.map((doc, index) => (
@@ -55,7 +54,7 @@ debugger
           <div className={styles.gridCell}>{doc.aula}</div>
           <div className={styles.gridCell}>
             <div className={styles.iconContainer}>
-              <img className={styles.iconEye} alt="Eye Icon" src="/eye.svg" />
+             
               <img
                 className={styles.iconEdit}
                 alt="Edit Icon"
