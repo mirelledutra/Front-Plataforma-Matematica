@@ -43,11 +43,13 @@ const Paginacao = ({
         onClick={() => changePage(prevPage)}
       />
       {itensPaginacao.map((pageNumber) => (
+        <div key={pageNumber}>
         <PaginacaoItem
           active={pageNumber === page}
           number={pageNumber}
           onClick={() => changePage(pageNumber)}
         />
+        </div>
       ))}
       <PaginacaoItem
         active={false}

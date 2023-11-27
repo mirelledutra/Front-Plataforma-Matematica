@@ -7,7 +7,6 @@ export class CookieHandler {
     }
   
     static getCookie(name) {
-      debugger
       const cookies = document.cookie.split(';');
       for (const cookie of cookies) {
         const [cookieName, cookieValue] = cookie.split('=').map(item => item.trim());

@@ -1,6 +1,6 @@
 import * as styles from "./style.module.css";
 
-const PaginacaoItem = ({ number, active, onClick, disabled }) => {
+const PaginacaoItem = ({ number, active, onClick, disabled}) => {
   return (
     <button
       disabled={disabled}

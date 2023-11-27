@@ -1,8 +1,14 @@
 import { useState, useEffect } from 'react';
 import axiosInstance from '@/util/fetch';
-import styles from "./styles.module.css"
+import styles from "@/styles/atualizarUser.module.css"
+import { useRouter } from 'next/router';
 
-export default function CadastroUserAdm() {
+export default function AtualizarUser() {
+
+  let router=useRouter()  
+  
+  const [user, setUser] = useState();
+
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -28,39 +34,34 @@ export default function CadastroUserAdm() {
     };
   }, [preview]);
 
+  async function BuscarUser(){
+    const user = await axiosInstance.get(`/usuarios/${router.query?.id}`)
+    setUser(user.data)
+  }
+
   const handleCadastro = async (event) => {
     event.preventDefault();
     if (senha !== confirmarSenha) {
       alert("As senhas não coincidem.");
       return;
     }
-
-    const formData = new FormData();
-    formData.append('nome', nome);
-    formData.append('user', email);
-    formData.append('email', email);
-    formData.append('senha', senha);
-    formData.append('telefone', telefone);
-    formData.append('ativo', true)
-   /* if (foto) {
-      formData.append('link_foto', foto);
-    }
-*/
     try {
-      console.log(formData)
-      await axiosInstance.post("/usuarios", {
+
+      const objUser = {
         nome: nome,
         email: email,
-        senha: senha,
         telefone: telefone,
         user: email,
         ativo: true
-   
+      }
+      
+      await axiosInstance.patch(`/usuarios/${router.query?.id}`, senha ? objUser : {...objUser, senha:senha});
 
-      });
-      alert("Cadastrado com sucesso!");
-      limparFormulario(); 
+      alert("Atualizado com sucesso!");
+      router.push('/cadastrarUsuario')
     } catch (error) {
+      console.log(error)
+
       alert(`Ocorreu um erro ao tentar cadastrar: ${error.response ? error.response.data.message : 'Erro interno do servidor'}`);
     }
   };
@@ -74,6 +75,16 @@ export default function CadastroUserAdm() {
     setTelefone('');
     setFoto(null);
     setPreview('');
+  };  
+  const preencherFormulario = () => {
+   
+    setNome(user.nome);
+    setEmail(user.email);
+    setSenha(user.senha);
+    setConfirmarSenha(user.confirmarSenha);
+    setTelefone(user.telefone);
+    setFoto(null);
+    setPreview('');
   };
 
   const handleCancelar = (event) => {
@@ -81,10 +92,29 @@ export default function CadastroUserAdm() {
     limparFormulario();
   };
 
+  useEffect (()=>{
+    if(router.query.id){
+      BuscarUser()
+    }
+  },[router])
+
+  useEffect (()=>{
+    if(user){
+      preencherFormulario()
+    }
+  },[user])
+
+
+
   return (
     <>
-     
+    <div className={styles.container1}>
+
+    <Menu />
+
       <div className={styles.container}>
+     
+
         <form className={styles.form} onSubmit={handleCadastro}>
           <div className={styles.inputGroup}>
           <label htmlFor="foto" className={styles.label}>Foto:</label>
@@ -136,7 +166,6 @@ export default function CadastroUserAdm() {
               type="password"
               id="senha"
               minLength={8}
-              required
               value={senha}
               onChange={(e) => setSenha(e.target.value)}
               className={styles.input}
@@ -149,7 +178,6 @@ export default function CadastroUserAdm() {
               type="password"
               id="confirmarSenha"
               minLength={8}
-              required
               value={confirmarSenha}
               onChange={(e) => setConfirmarSenha(e.target.value)}
               className={styles.input}
@@ -157,7 +185,7 @@ export default function CadastroUserAdm() {
           </div>
 
           <button type="submit" className={styles.submitButton}>
-            Cadastrar
+            Atualizar
           </button >
           <button type="button" className={styles.cancelButton} onClick={handleCancelar}>
             Cancelar
@@ -165,6 +193,7 @@ export default function CadastroUserAdm() {
         </form>
         {preview && <img src={preview} alt="Pré-visualização" className={styles.imagePreview} />}
       </div>
+  </div>
     </>
   );
 }

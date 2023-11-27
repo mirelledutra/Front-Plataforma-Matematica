@@ -10,6 +10,18 @@ import { useRouter } from "next/router";
 export default function GridUsuario() {
   const [iconVisible, setIconVisible] = useState(false);
   const router = useRouter();
+
+
+  async function deletar(_id){
+   let apagar= window.confirm('Deseja apagar?')
+
+
+   if(apagar == true){
+    const res = await axiosInstance.delete(`/usuarios/${_id}`)
+    window.location.reload()
+   }
+  }
+
   const { data, isLoading, error } = useSWR(
     `/usuarios?page=${router.query?.page ?? 1}&perPage=5`,
     axiosInstance
@@ -25,9 +37,8 @@ export default function GridUsuario() {
     return <div>
         <p>Um erro ocorreu</p>
     </div>
-
   }
-debugger
+
   const { docs, ...paginationProps } = data.data;
 
   return (
@@ -53,16 +64,19 @@ debugger
           <div className={styles.gridCell}>{doc.telefone}</div>
           <div className={styles.gridCell}>
             <div className={styles.iconContainer}>
-             
+                         
               <img
                 className={styles.iconEdit}
                 alt="Edit Icon"
                 src="/edit.svg"
+                onClick={()=> router.push(`/atualizarUser/${doc._id}`)}
+
               />
               <img
                 className={styles.iconTrash}
                 alt="Trash Icon"
                 src="/trash.svg"
+                onClick={()=> deletar(doc._id)}
               />
             </div>
           </div>
