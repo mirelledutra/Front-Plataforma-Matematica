@@ -110,7 +110,7 @@ export default function AtualizarUser() {
     <>
     <div className={styles.container1}>
 
-    <Menu />
+    
 
       <div className={styles.container}>
      
