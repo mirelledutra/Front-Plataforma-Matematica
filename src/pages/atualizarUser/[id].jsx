@@ -120,7 +120,6 @@ export default function AtualizarUser() {
         <div className={styles.container}>
  
 
-<<<<<<< HEAD
           <form className={styles.form} onSubmit={handleCadastro}>
     
             <div className={styles.inputGroup}>
@@ -131,9 +130,6 @@ export default function AtualizarUser() {
                 onChange={(e) => setFoto(e.target.files[0])}
                 className={styles.input}
               />
-=======
-    
->>>>>>> da93d4f5a1620641c06c814104c6d9d08baaea43
 
               <label htmlFor="nome" className={styles.label}>Nome:</label>
               <input
