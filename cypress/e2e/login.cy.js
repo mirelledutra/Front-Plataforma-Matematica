@@ -1,6 +1,6 @@
 describe('Página Login - cenário correto', () => {
   it('Deve efetuar login do usuário', () => {
-    cy.visit('http://localhost:3001/')
+    cy.visit('http://localhost:3000/')
     cy.get('[href="/Login"]').click();
     cy.get('#nome').type("susbarb@gmail.com");
     cy.get('#senha').type("12345678");
@@ -11,7 +11,7 @@ describe('Página Login - cenário correto', () => {
   })
 
   it('Deve efetuar login do usuário', () => {
-    cy.visit('http://localhost:3001/')
+    cy.visit('http://localhost:3000/')
     cy.get('[href="/Login"]').click();
     cy.get('#nome').type("susbarb@gmail.com");
     cy.get('#senha').type("123");

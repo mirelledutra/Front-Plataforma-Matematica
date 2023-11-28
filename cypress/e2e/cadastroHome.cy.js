@@ -1,6 +1,6 @@
 describe('Cadastro Usuário', () => {
   it('Deve cadastrar usuário', () => {
-    cy.visit('http://localhost:3001/')
+    cy.visit('http://localhost:3000/')
     cy.get('[href="/Cadastrar"]').click();
     cy.get('#nome').type("Suellen Barbosa");
     cy.get('#email').type("susbarb@gmail.com");
@@ -12,7 +12,7 @@ describe('Cadastro Usuário', () => {
 
   })
   it('Deve retornar as mensagem de senha inválida - cenário de insucesso', () => {
-    cy.visit('http://localhost:3001/')
+    cy.visit('http://localhost:3000/')
     cy.get('[href="/Cadastrar"]').click();
     cy.get('#nome').type("Suellen Barbosa");
     cy.get('#email').type("susbarb@gmail.com");

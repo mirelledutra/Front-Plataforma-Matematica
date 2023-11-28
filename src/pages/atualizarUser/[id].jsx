@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import axiosInstance from '@/util/fetch';
 import styles from "@/styles/atualizarUser.module.css"
+import Menu from '@/components/SideBar';
 import { useRouter } from 'next/router';
+import BarraPerfil from '@/components/BarraPerfil';
+import BarraPesquisa from '@/components/BarraPesquisa';
 
 export default function AtualizarUser() {
 
@@ -107,93 +110,97 @@ export default function AtualizarUser() {
 
 
   return (
+    
     <>
     <div className={styles.container1}>
+      <Menu />
+      <div className={styles.t}>
+        <BarraPesquisa />
+        <BarraPerfil />
+        <div className={styles.container}>
+ 
 
-    <Menu />
+          <form className={styles.form} onSubmit={handleCadastro}>
+    
+            <div className={styles.inputGroup}>
+            <label htmlFor="foto" className={styles.label}>Foto:</label>
+              <input
+                type="file"
+                id="foto"
+                onChange={(e) => setFoto(e.target.files[0])}
+                className={styles.input}
+              />
 
-      <div className={styles.container}>
-     
+              <label htmlFor="nome" className={styles.label}>Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                required
+                value={nome}
+                onChange={(e) => setNome(e.target.value)}
+                className={styles.input}
+              />
+            </div>
 
-        <form className={styles.form} onSubmit={handleCadastro}>
-          <div className={styles.inputGroup}>
-          <label htmlFor="foto" className={styles.label}>Foto:</label>
-            <input
-              type="file"
-              id="foto"
-              onChange={(e) => setFoto(e.target.files[0])}
-              className={styles.input}
-            />
-          
-            <label htmlFor="nome" className={styles.label}>Nome:</label>
-            <input
-              type="text"
-              id="nome"
-              required
-              value={nome}
-              onChange={(e) => setNome(e.target.value)}
-              className={styles.input}
-            />
-          </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="email" className={styles.label}>Email:</label>
+              <input
+                type="email"
+                id="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className={styles.input}
+              />
+            </div>
 
-          <div className={styles.inputGroup}>
-            <label htmlFor="email" className={styles.label}>Email:</label>
-            <input
-              type="email"
-              id="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className={styles.input}
-            />
-          </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="telefone" className={styles.label}>Telefone:</label>
+              <input
+                type="text"
+                id="telefone"
+                required
+                value={telefone}
+                onChange={(e) => setTelefone(e.target.value)}
+                className={styles.input}
+              />
+            </div>
 
-          <div className={styles.inputGroup}>
-            <label htmlFor="telefone" className={styles.label}>Telefone:</label>
-            <input
-              type="text"
-              id="telefone"
-              required
-              value={telefone}
-              onChange={(e) => setTelefone(e.target.value)}
-              className={styles.input}
-            />
-          </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="senha" className={styles.label}>Senha:</label>
+              <input
+                type="password"
+                id="senha"
+                minLength={8}
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)}
+                className={styles.input}
+              />
+            </div>
 
-          <div className={styles.inputGroup}>
-            <label htmlFor="senha" className={styles.label}>Senha:</label>
-            <input
-              type="password"
-              id="senha"
-              minLength={8}
-              value={senha}
-              onChange={(e) => setSenha(e.target.value)}
-              className={styles.input}
-            />
-          </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="confirmarSenha" className={styles.label}>Confirmar Senha:</label>
+              <input
+                type="password"
+                id="confirmarSenha"
+                minLength={8}
+                value={confirmarSenha}
+                onChange={(e) => setConfirmarSenha(e.target.value)}
+                className={styles.input}
+              />
+            </div>
 
-          <div className={styles.inputGroup}>
-            <label htmlFor="confirmarSenha" className={styles.label}>Confirmar Senha:</label>
-            <input
-              type="password"
-              id="confirmarSenha"
-              minLength={8}
-              value={confirmarSenha}
-              onChange={(e) => setConfirmarSenha(e.target.value)}
-              className={styles.input}
-            />
-          </div>
-
-          <button type="submit" className={styles.submitButton}>
-            Atualizar
-          </button >
-          <button type="button" className={styles.cancelButton} onClick={handleCancelar}>
-            Cancelar
-          </button>
-        </form>
-        {preview && <img src={preview} alt="Pré-visualização" className={styles.imagePreview} />}
-      </div>
-  </div>
-    </>
-  );
-}
+            <button type="submit" className={styles.submitButton}>
+              Atualizar
+            </button >
+            <button type="button" className={styles.cancelButton} onClick={handleCancelar}>
+              Cancelar 
+            </button>
+          </form>
+          {preview && <img src={preview} alt="Pré-visualização" className={styles.imagePreview} />}
+       </div>
+    </div>  
+  </div>  
+    </> 
+  );  
+} 

@@ -17,10 +17,10 @@ export default function Menu() {
                 <header className={styles.header}>
                     <div className={styles.imagetext}>
                         <span className={styles.image}>
-                            <Link href={'/'}>
+                            <a className={styles.link} href="/">
                             <img className={styles.logo}src='logo.png' alt='Logo' />
                            
-                            </Link>
+                            </a>
 
                         </span>
                         <div className={`${styles.text} ${styles.headertext}`}>
