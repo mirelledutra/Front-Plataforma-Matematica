@@ -1,0 +1,119 @@
+.titulo {
+  position: absolute;
+  color: #225943;
+  font-size: 26px;
+  font-family: var(Poppins),sans-serif;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+.formulario {
+  margin: 60px;
+  margin-top: 80px;
+  padding: 40px;
+  border: 1px solid #08624C;
+  width: 1000px;
+}
+
+.inputGroup {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.inputcurso,
+.inputArea,
+.inputTipo,
+.inputProfessor{
+  display: flex;
+  width: 100%;
+  height: 43px;
+  font-size: 16px;
+  color: #484848;
+  border-radius: 1vh;
+  border: 1px solid #ccc;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.checkstatus {
+  width: 21px;
+  height: 21px;
+  margin-left: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:right;
+  align-items: center;
+  width: 1000px;
+  height: 70px;
+}
+.buttonSalvar{
+
+  justify-content: right;
+  background-color: #08624C;
+  font-family: var(Poppins), sans-serif;
+  font-size: 16px;
+  color: #ffff;
+  width: 250px;
+  height: 43px;
+  cursor: pointer;
+  
+}
+.buttonCancel{
+
+  background-color: #08624C;
+  font-family: var(Poppins), sans-serif;
+  font-size: 16px;
+  color: #ffff;
+  margin-left: 30px;
+  width: 250px;
+  height: 43px;
+  cursor: pointer;
+}
+
+.imagemPreviewContainer {
+  width: 100px; /* Tamanho fixo desejado */
+  height: 100px; /* Tamanho fixo desejado */
+  overflow: hidden;
+  margin-top: 10px;
+  display: flex;
+}
+
+.imagemPreview {
+  width: 20%;
+  height: auto;
+  padding: 20px;
+}
+.selectImage {
+  /* Adicione estilos conforme necessário */
+  cursor: pointer;
+  background-color: #08624C;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.container{
+  margin: 0px;
+  display:flex;
+
+  justify-content: space-between;
+  
+
+}
+.buttonAreaContainer,
+.buttonTipoContainer{
+  margin-right: 400px;
+  
+}
+
+
+.descricao{
+  display: flex;
+  width: 96%;
+  height: 90px;
+  font-size: 16px;
+  padding: 25px;
+}

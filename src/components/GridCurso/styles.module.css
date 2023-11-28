@@ -1,0 +1,77 @@
+.gridRow {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    height: 40px;
+    background-color: #08624c;
+    margin-left: 60px;
+    width: 1040px;
+
+
+}
+.firstRow{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffff;
+    padding: 20px 20px;
+    border-radius: 5px;
+ 
+ 
+
+}
+  
+.gridCell {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  
+
+
+}
+
+  
+.headerCell {
+    font-weight: bold;
+}
+  
+.evenRow {
+    background-color: #deeae5;
+    width: 1080px;
+
+}
+  
+.oddRow {
+    background-color: #ffffff;
+    width: 1080px;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 50px;
+   
+}
+
+.iconEye {
+    width: 20px;
+    height: 20px;
+
+}
+
+.iconEdit {
+    width: 20px;
+    height: 20px;
+
+}
+
+.iconTrash {
+    width: 20px;
+    height: 20px;
+}
+  

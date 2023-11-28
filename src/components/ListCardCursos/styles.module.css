@@ -1,0 +1,15 @@
+.listCardCurso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo{
+  
+        position: absolute;
+        color: #225943;
+        font-size: 26px;
+        font-family: var(Poppins),sans-serif;
+        margin-top: 30px;
+        margin-left: 60px;
+}

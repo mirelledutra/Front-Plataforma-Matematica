@@ -1,42 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* css para a tela do menu lateral ADM */
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   line-height: normal;
-  max-width: 1440px; 
-  margin: 0 auto; 
+ 
 }
+
 :root {
   /* fonts */
-  --font-poppins: Poppins;
-  --inter: Inter;
+  --font-poppins:Poppins;
   --font-roboto: Roboto;
 
   /* font sizes */
   --font-size-base: 16px;
-  --font-size-2xs-8: 10.8px;
-  --inter-size: 12px;
-  --font-size-sm: 14px;
+  --font-size-lg: 18px;
 
   /* Colors */
-  --secondary: #929292;
-  --color-gray-100: #101920;
-  --color-gray-200: #0d1216;
   --color-white: #fff;
-  --color-whitesmoke-100: #f4f4f4;
-  --gray: #f1f1f1;
-  --color-black: #000;
-  --gray-dark: #484848;
-  --color-darkslategray-100: #225943;
-  --color-darkslategray-200: #263238;
-  --primary: #08624c;
-  --color-gainsboro-100: #deeae5;
+  --color-gray: #0d1216;
+  --color-gainsboro-100: #dedede;
   --color-gainsboro-200: #d9d9d9;
   --color-darkgray: #9a9a9a;
+  --color-dimgray: #6d6b6b;
 
   /* Gaps */
+  --gap-smi: 13px;
+  --gap-xs: 12px;
   --gap-3xs: 10px;
 
   /* Paddings */
@@ -45,7 +42,5 @@ body {
 
   /* Border radiuses */
   --br-xl: 20px;
-  --br-8xs-5: 4.5px;
-  --br-8xs: 5px;
   --br-3xs: 10px;
 }

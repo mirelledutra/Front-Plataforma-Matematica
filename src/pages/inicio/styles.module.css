@@ -1,0 +1,84 @@
+
+.container{
+  display: flex;
+  overflow: auto;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+.t{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.cadastraListarCurso {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 1400px;
+  overflow: hidden;
+}
+
+.imagemblog {
+  position: absolute;
+  top: 80vh; 
+  left: 47vw; 
+  transform: translate(-80%, -50%); 
+}
+.titulo{
+  color: #096E46;
+  font: var(--font-poppins), sans-serif;
+  font-size:26px;
+  position: absolute;
+  left: 60px;
+  top: 16%;
+}
+.subtitulo{
+  color: black;
+  font: Arial;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 60px;
+  top: 25%;
+
+}
+.botao {
+  position: absolute;
+  top: 70vh; 
+  left: 60px; 
+  background-color: #25D691;
+  font-size: 1.0rem;
+  color: white;
+  font: var(--font-poppins);
+  width: 160px;
+  height: 50px; 
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+  padding: 0; 
+}
+
+.inicio{
+  color: #096E46;
+  font: var(--font-poppins), sans-serif;
+  font-size: 26px;
+  position: absolute;
+  margin-left: 60px;
+  top: 30px;
+}
+
+.boxContainer{
+  display: flex;
+ justify-content: space-between;
+ align-content: center;
+  margin-top: 200px;
+margin-left: 60px;
+
+}
+.box1,
+.box2,
+.box3{
+  margin: 10px;
+}

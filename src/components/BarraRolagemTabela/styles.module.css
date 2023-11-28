@@ -1,0 +1,19 @@
+.barrarolagem {
+  background-color: #25d691;
+  width: 8px;
+  height: 100%; /* Defina a altura para cobrir toda a altura da tabela */
+  max-height: 100%; /* Remova a altura máxima */
+  transition: height 0.3s ease;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.barrarolagemChild {
+  position:absolute;
+  border-radius: 0px;
+  background-color: #d9d9d9;
+  width: 8px;
+  height: 164px;
+  height: calc(30%);
+}
+

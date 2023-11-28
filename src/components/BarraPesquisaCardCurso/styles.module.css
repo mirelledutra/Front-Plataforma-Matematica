@@ -1,0 +1,75 @@
+.title{
+  
+    position: relative;
+   top: 40px;
+     margin-left: 20px;
+    font-size: 30px;
+    font-family: var(Poppins),sans-serif;
+    font-style: SemiBold;
+    color: #225943;
+  }
+  .labelContainer{
+   
+      position:relative;
+  
+    
+    }
+    
+    .input {
+      position: relative;
+  
+      left: 400px;
+      background-color: #DEDEDE;
+      border: 1px solid #DEDEDE;
+      border-radius: 20px;
+      max-width: 800px;
+      min-width: 800px;
+      height: 40px;
+    
+      }
+   
+      
+    .lupaimgIcon {
+      position: absolute;
+      margin: 40px;
+      left: 1110px;
+      cursor: pointer;
+      
+    }
+      
+    .barra {
+      position:relative;
+  
+      margin: 1px;
+      border-top: 1px solid var(--color-darkgray);
+      box-sizing: border-box;
+      width: 1510px;
+   
+      }
+      .barraperfil{
+        display: flex;
+        left: 1400px;
+        position: relative;
+        width: 0px;
+        height: 40px;
+        border: 1px solid var(--color-darkgray);
+  
+      }
+    
+      .perfilIcon {
+        left: 650px;
+  
+  
+        position: relative;
+  
+  
+           
+    
+  
+        
+     
+      }
+      
+    
+    
+      

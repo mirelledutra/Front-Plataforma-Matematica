@@ -1,0 +1,8 @@
+services:
+  front-matematica:
+    build:
+      context: .
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:3000
+    ports:
+      - 3001:3000

@@ -1,0 +1,41 @@
+.RodapeBox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 3vh;
+    width: 100%;
+    text-align: center;  
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: #3E4F48;
+    margin-bottom: 3.1vh;
+}
+.logosprojeto {
+    display: flex;
+    align-items: center; 
+    margin-left: 7.02vh;
+    gap: 5vh;
+}
+
+.redessociais {
+    display: flex;
+    margin-right: 10.6vh;
+    align-items: center;  
+    gap: 3vh;
+}
+
+.descricao {
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: -2vh;
+    margin-right: 7vh;
+    gap: 0.5vh;
+}

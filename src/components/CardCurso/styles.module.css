@@ -1,0 +1,66 @@
+
+.cardTitulo{
+    text-decoration: none;
+    color: #225943;
+    text-align:left;
+    font-size: 20px;
+
+}
+
+.card{
+
+    
+    margin: 40px;
+    margin-left: 50px;
+    width: 253px;
+    height: 232px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #25D691;
+    font-size: 20px;
+    background-color: #fff;
+    color: #323232;
+ 
+
+}
+.imagelogo{
+    margin: 0%;
+    padding: 5px;
+    transform: scale(100%);
+    justify-items: left;
+  
+ 
+
+
+
+}
+
+.imagemcard{
+    width: 230px;
+    height: 80px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.icone{
+
+    position: relative;
+    left: 230px;
+    cursor: pointer;
+
+}
+.card a{
+    text-decoration: none;
+
+}
+.card > a > div{
+    color:#323232;
+    
+}
+
+
+
+
+

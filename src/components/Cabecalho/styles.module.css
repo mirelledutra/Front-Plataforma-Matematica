@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imagem {
+  padding: 4vh;
+  padding-left: 20vh;
+  margin-bottom: 1vh;
+}
+
+.nav {
+  display: flex;
+  gap: 4vh;
+  margin-right: 20vh;
+}
+
+.rotas {
+  width: 10vh;
+  color: white;
+  text-decoration: none;
+  background: #096E46;
+  border-radius: 20px;
+  padding: 1.2vh 6.5vh;
+  font-size: 2vh;
+  font-weight: 400;
+  text-align: center;
+}
+
+.rotas:nth-child(2){
+  background: white;
+  color:#096E46;
+  border: 1px solid #096E46;
+}

@@ -1,0 +1,32 @@
+.barra {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-top: 1px solid var(--color-darkgray);
+  box-sizing: border-box;
+  width: 1150px;
+  height: 1px;
+  }
+  .barraperfil{
+    position: absolute;
+    margin-right: 100px;
+    width: 36px;
+    height: 1px;
+    right: 124px;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  .perfilIcon {
+    position: absolute;
+    height: 36px;
+    width: 36px;
+
+    right: 57px;
+    bottom: 90.33%;
+    left: 1130px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  

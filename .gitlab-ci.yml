@@ -1,0 +1,94 @@
+
+# Exemplo completo (testes, build e deploy) de Arquivo .gitlab-ci.yml
+# A ideia é demonstrar como funciona esta configuração
+# para então ser possível realizar o CI/CD de qualquer
+# aplicação que você queira
+
+# Variáveis que poderão ser usadas nos Jobs
+variables:
+  # Declarado o nome da imagem docker que será construída
+  # Você talvez queira modificar 'nodejs-simples' para o nome de seu projeto
+  # O prefixo registry.fslab.dev indica que esta imagem docker não
+  # será enviada para o Docker Hub, mas ao invés disso, ficará apenas no 
+  # registry privado do fslab, que já está configurado no Gitlab para ser utilizado
+  # (Irei prover credenciais para você poderem utilizar este registry)
+  IMAGEM_DOCKER: registry.fslab.dev/viniciusbraz/plataforma-front
+  # Esta variável está capturando uma variável de ambiente definida na seção CI/CD
+  # do projeto do Gitlab. Apenas 'Manteiners' do projeto podem acessar/alterar esses valores
+  KUBECTL_CONFIG: $KUBECTL_CONFIG
+  ENV: $ENV
+  
+
+# Aqui se definem os estágios que poderão ser executados
+# Os Jobs que fazer parte de um estágio podem executar ao mesmo tempo, porém
+# todos os Jobs do estágio devem ser finalizados antes de prosseguir ao próximo
+# Sendo assim caso um Job dependa do outro, devem ser de estágios diferentes 
+stages:
+  - test
+  - build
+  - deploy
+
+# Este Job irá executar todos os testes da aplicação
+# A ideia é que se os testes falharem os próximos Jobs não serão executados
+# Este job está no estagio build, portanto neste ponto o estagio teste já deve ter
+# terminado e passado, pois caso tenha dado algum erro não chega aqui
+buildar-docker:
+  stage: build
+  # Especifica que este Job depende do 'testar-app' para ser executado
+  needs: []
+  # Utiliza a imagem do 'docker in docker' para ter como realizar comandos docker
+  image: docker:dind
+  only:
+    - development
+  script:
+    - cat $ENV > .env 
+    # Realiza o build da imagem como o nome definido na variável de ambiente
+    - docker build -t $IMAGEM_DOCKER .
+    # Envia a imagem docker para o registry
+    - docker push $IMAGEM_DOCKER
+
+# Esta última adiciona/atualiza a configuração do deploy no cluster kubernetes
+# Isto é feito graças à variável de ambiente configurada no projeto que dá
+# as credenciais necessárias para se conectar ao Cluster Kubernetes
+fazer-deploy:
+  stage: deploy
+  needs: ["buildar-docker"]
+  # Utilizando a imagem do kubectl para ser possível se conectar ao cluster kubernetes
+  # executando os comandos kubectl
+  image:
+    name: bitnami/kubectl:latest
+    entrypoint: ['']
+  only:
+    - development
+  script:
+    # Configura as credenciais do kubectl, para ser possível interagir com o cluster
+    - cat $KUBECTL_CONFIG > ~/.kube/config
+
+    # Obtêm informações para saber o que está acontecendo no cluster e se as credenciais são válidas.
+    - kubectl config get-contexts
+    - kubectl get node
+    - kubectl get pods
+
+    # Primeiro remove o deployment que estava em execução anteriormente.
+    # observe que este comando poderia dar erro (falhar) caso o deployment não exista
+    # por isso é colocado || true, para que mesmo que este comando falhe não pare o inteiro Job.
+    - kubectl delete deployment plataforma-front || true
+
+    # Dependendo da situação seria interessante esperar um pouco antes de aplicar novamente
+    # para impedir que por um curto período de tempo existam as duas aplicações (antiga e nova) em execução
+    #- sleep 10
+
+    # Aplica o deployment no cluster
+    - kubectl apply -f deployment.yaml
+
+    # Apenas aplicar o deployment não é suficiente para saber que deu certo
+    # É interessante executar alguns comandos para verificar que realmente
+    # a aplicação está em execução sem nenhum erro
+    # Espera 60 segundos para ter certeza que tudo está online
+    # DEPOIS: VER UM JEITO DE ESPERAR SÓ O NECESSÁRIO E NÃO CHUTANDO ALTO ASSIM
+    - sleep 60
+    
+    # Log para ver se deu certo (E ver o erro caso não tenha dado)
+    - kubectl get pods
+    - kubectl describe deploy/plataforma-front
+    - kubectl logs deploy/plataforma-front

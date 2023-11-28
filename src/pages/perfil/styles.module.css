@@ -1,0 +1,120 @@
+.container{
+  display: flex;
+  overflow: auto;
+  height: 100vh;
+  background-color: #F4F4F4;
+  
+}
+.t{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.formulario {
+  margin: 60px;
+  margin-top: 80px;
+  padding: 40px;
+  border: 1px solid #08624C;
+  width: 1000px;
+  height: 600px;
+}
+.titulo {
+  position: absolute;
+  color: #225943;
+  font-size: 26px;
+  font-family: var(Poppins),sans-serif;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.usuario{
+  position: absolute;
+  top: 25vh; 
+  left: 120px;
+  width: 160px; 
+  height: 130px; 
+  box-shadow: 4px 4px 8px rgba(128, 128, 128, 20);
+}
+
+.inputNome,
+.inputUsuario,
+.inputEmail,
+.inputSenha {
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.inputNome {
+  margin-top: 20px;
+  left: 300px;
+}
+
+.inputUsuario {
+  margin-top: 80px;
+  left: 300px;
+}
+
+.inputEmail {
+  margin-top: 140px;
+  left: 300px;
+}
+
+.inputSenha {
+  margin-top: 200px;
+  left: 300px;
+}
+
+.inputNovaSenha,
+.inputConfirmarSenha,
+.inputTelefone{
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  left: 60%;
+}
+.inputNovaSenha{
+  margin-top: 20px;
+}
+
+.inputConfirmarSenha{
+  margin-top: 80px;
+}
+
+.inputTelefone{
+  margin-top: 140px;
+}
+
+.inputFile,
+.uploadButton{
+  margin-top: 160px;
+  left: 150px;
+  position: absolute;
+  font-size: 20px;
+  padding: 10px;
+  font: var(--font-poppins);
+  border-radius: 5px;
+  background-color: #08624C;
+  color: white;
+}
+
+.botaoSalvar {
+  margin-top: 280px;
+  left: 24%;
+  position: absolute;
+  font-size: 20px;
+  padding: 10px;
+  font: var(--font-poppins);
+  border-radius: 5px;
+  background-color: #08624C;
+  color: white;
+  width: 47%;
+}
+
+

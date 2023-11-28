@@ -1,0 +1,39 @@
+.labelContainer {
+  width: 68px;
+  height: 41px;
+}
+
+.label {
+  top: 50px;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  width: 1180px;
+  height: 66px;
+  text-align: left;
+  color: gray;
+  font-family: var(--font-roboto);
+}
+
+.input {
+  margin-top: 25px;
+  background-color: #dedede;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+  max-width: 600px;
+  left: 685px;
+  width: 682px;
+  height: 41px;
+  margin-left: 300px;
+  padding-left: 40px; /* Adicione um espaço à esquerda para o ícone */
+  background-repeat: no-repeat;
+  background-position: 600px center; /* Ajuste a posição do ícone conforme necessário */
+  cursor: pointer;
+}
+
+ 
+
+  
+
+
+  
